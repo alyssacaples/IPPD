@@ -1,0 +1,62 @@
+<annotation>
+	<folder>Final_Images_Camera_Size</folder>
+	<filename>cm3.jpg</filename>
+	<path>/home/sebastian/Downloads/Final_Images_Camera_Size/cm3.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1600</width>
+		<height>1200</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Caribbean Fruit Fly</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>754</xmin>
+			<ymin>689</ymin>
+			<xmax>811</xmax>
+			<ymax>731</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Mediterranean Fruit Fly</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>966</xmin>
+			<ymin>512</ymin>
+			<xmax>1016</xmax>
+			<ymax>560</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Mediterranean Fruit Fly</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1050</xmin>
+			<ymin>908</ymin>
+			<xmax>1115</xmax>
+			<ymax>946</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Caribbean Fruit Fly</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1216</xmin>
+			<ymin>820</ymin>
+			<xmax>1280</xmax>
+			<ymax>885</ymax>
+		</bndbox>
+	</object>
+</annotation>

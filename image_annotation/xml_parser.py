@@ -3,12 +3,13 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 import ast
+import os
+
+
+os.chdir("image_annotation")
 
 # change file names here
-base = "3_4_6"
-xml_parse = "annotations" + base + ".xml"
-img_filename = "Snap_Speed" + base + ".jpg"
-output_filename = "annotated" + base + ".jpg"
+xml_parse = "fly_image_set_1.xml"
 
 tree = ET.parse(xml_parse)
 root = tree.getroot()
@@ -50,63 +51,53 @@ f2_label = []
 f3_label = []
 f4_label = []
 
-for child in root.iter('polyline'):
-    child_points = parse_line(child.attrib['points']) # this is a string
+cnt = 0
+for child in root.iter('image'):
+    print(child.attrib["name"])
     
-    if(child.attrib['label'] == 'f1'):
-        f1_label.append(child_points)
-        #print("f1")
-    elif(child.attrib['label'] == 'f2'):
-        f2_label.append(child_points)
-        #print("f2")
-    elif(child.attrib['label'] == 'f3'):
-        f3_label.append(child_points)
-        #print("f3")
-    elif(child.attrib['label'] == 'f4'):
-        f4_label.append(child_points)
-        #np.concatenate((f4_label, child_points), axis=0)
+    filename_title = str(child.attrib["name"])
+    # print(type(filename))
+    # print(filename)
+    
+    # make a new file based on image name
+    
+    root = ET.Element("annotation")
+    folder = ET.SubElement(root, "folder")
+    filename = ET.SubElement(root, "filename")
+    path = ET.SubElement(root, "path" )
+    
+    source = ET.SubElement(root, "source")
+    size = ET.SubElement(root, "size")
+    
+    segmented = ET.SubElement(root, "segmented")
+    object = ET.SubElement(root, "object")
+    
+    tree = ET.ElementTree(root)
+    output_xml_name = filename_title[:-4] + "_output.xml"
+    tree.write(output_xml_name)
+    
+
+    cnt = cnt + 1
+    if cnt > 0:
+        break
+    
+    
+    
+    
+    #child_points = parse_line(child.attrib['points']) # this is a string
+    
+    # if(child.attrib['label'] == 'f1'):
+    #     f1_label.append(child_points)
+    #     #print("f1")
+    # elif(child.attrib['label'] == 'f2'):
+    #     f2_label.append(child_points)
+    #     #print("f2")
+    # elif(child.attrib['label'] == 'f3'):
+    #     f3_label.append(child_points)
+    #     #print("f3")
+    # elif(child.attrib['label'] == 'f4'):
+    #     f4_label.append(child_points)
+    #     #np.concatenate((f4_label, child_points), axis=0)
         #print("f4")
 
-#vect = np.vectorize(np.float)
-f1_label = np.array(f1_label, dtype=object)
-f2_label = np.array(f2_label, dtype=object)
-f3_label = np.array(f3_label, dtype=object)
-f4_label = np.array(f4_label, dtype=object)
-
-img = cv2.imread(img_filename)
-cpy_img = img.copy()
-
-all_fill = np.array([[0, 0], [0,1200], [1200, 1200], [1200, 0]])
-cv2.fillPoly(img,np.int32([all_fill]),color=(255, 0, 0) ) # fill everything w f1 color ebcause it is the background
-
-# for shape in f1_label:
-
-#     cv2.fillPoly(img, np.int32([shape]), color=(255, 0, 0))
-
-for shape in f2_label:
-    cv2.fillPoly(img, np.int32([shape]), color=(255, 255, 0))
-
-lower = [155, 155, 155]
-upper = [255, 255, 255]
-
-img = contour_identifier(cpy_img, img, (0, 255, 0), lower, upper)
-
-# for shape in f3_label:
-
-#     cv2.fillPoly(img, np.int32([shape]), color=(0, 255, 0)) #white parts
-
-for shape in f4_label:
-
-    cv2.fillPoly(img, np.int32([shape]), color=(255, 0, 255))
-
-cv2.imshow("filled polygon", img)
-
-#wait for the user to press any key to 
-#exit window
-cv2.waitKey(0)
-  
-#Closing all open windows
-cv2.destroyAllWindows()
-
-cv2.imwrite(output_filename, img)
-
+print(cnt)
