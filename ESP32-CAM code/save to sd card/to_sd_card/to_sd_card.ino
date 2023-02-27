@@ -108,7 +108,7 @@ void initCamera()
 
   if (psramFound())
   {
-    config.frame_size = FRAMESIZE_UXGA;
+    config.frame_size = FRAMESIZE_QSXGA;
     config.jpeg_quality = 3;
     config.fb_count = 2;
   }
@@ -126,7 +126,7 @@ void initCamera()
     ESP.restart();
   }
 
-  if(!SD_MMC.begin()){
+  if(!SD_MMC.begin("/sdcard", true)){
     Serial.println("SD Card Mount Failed");
     return;
   }
@@ -178,14 +178,24 @@ void capturePhotoSaveSD(void)
 void setup()
 {
   Serial.begin(115200);
+  
   // initialize the flash light pin as an output:
   pinMode(FLASH_GPIO_NUM, OUTPUT);
+  //turn on LED
+  digitalWrite(FLASH_GPIO_NUM, HIGH);
   initCamera();
-  flash(1);
-  capturePhotoSaveSD();
-  flash(1);
-  capturePhotoSaveSD();
-  flash(1);
+  //wait 10 seconds
+  delay(2000);
+
+  //for (int i=0; i<3; i++)
+  //{
+    //take photo
+    capturePhotoSaveSD();
+    //wait
+    delay(500);
+  //}
+  //turn off LED
+  digitalWrite(FLASH_GPIO_NUM, LOW);
 }
 
 void loop()
