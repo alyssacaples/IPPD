@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Final_Images_Camera_Size</folder>
+	<filename>c2.jpg</filename>
+	<path>/home/sebastian/Downloads/Final_Images_Camera_Size/c2.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1600</width>
+		<height>1200</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Caribbean Fruit Fly</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>640</xmin>
+			<ymin>768</ymin>
+			<xmax>677</xmax>
+			<ymax>827</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Caribbean Fruit Fly</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1057</xmin>
+			<ymin>866</ymin>
+			<xmax>1118</xmax>
+			<ymax>932</ymax>
+		</bndbox>
+	</object>
+</annotation>
