@@ -1,103 +1,107 @@
 import xml.etree.ElementTree as ET
-import numpy as np
-import cv2
-import matplotlib.pyplot as plt
+
+# import numpy as np
+# import cv2
+# import matplotlib.pyplot as plt
 import ast
 import os
+import sys
+
+#images must be inside the ippd github repo
+#all images should be inside the image folder
+image_folder_name = "Session1"  # where the images are located.
+xml_parse = "fly_image_set_1.xml" # this should later be based on image folder name
 
 
-os.chdir("image_annotation")
-
-# change file names here
-xml_parse = "fly_image_set_1.xml"
-
-tree = ET.parse(xml_parse)
-root = tree.getroot()
-
-def parse_line(line):
-    individ = line.split(';')
-    xy = []
-    for each in individ:
-        xy.append(np.array(each.split(','), dtype=np.float32))
-
-    return np.array(xy)
+xml_output_folder = image_folder_name + "_"+ "OutputXMLs" 
+label_dictionary = {
+    "caribbean": "Caribbean Fruit Fly",
+    "med": "Mediterranean Fruit Fly",
+    "oriental": "Oriental Fruit Fly",
+}
 
 
-def contour_identifier(image, output_img, output_color, lower, upper):
-    #image = cv2.imread(img)
-    lower = np.array(lower, dtype= "uint8")
-    upper = np.array(upper, dtype= "uint8")
-    
-    mask = cv2.inRange(image, lower, upper)
+print(xml_output_folder)
+os.chdir("image_annotation") # inside the github
+saved_path = os.getcwd() + "\\" + image_folder_name + "\\"
 
-    points = []
-    height, width = mask.shape
-    for x in range(height):
-        for y in range(width):
-            if(mask[x][y] == 255):
-                points.append((y, x))
+old_tree = ET.parse(xml_parse)
+old_root = old_tree.getroot()
 
-    points = np.array(points, dtype=object)
+os.chdir("XML_Output") # where all xml files should go
+if not os.path.exists(xml_output_folder):
+    print("does not exist")
+    os.mkdir(xml_output_folder)
 
-    for shape in points:
-        #print(shape)
-        shape = shape.reshape(-1,1,2)
-        cv2.fillPoly(output_img, np.int32([shape]), color=(0, 255, 0))
-    
-    return output_img
+# change all xml files
 
-f1_label = []
-f2_label = []
-f3_label = []
-f4_label = []
-
+os.chdir(xml_output_folder)
 cnt = 0
-for child in root.iter('image'):
+
+for child in old_root.iter("image"):
     print(child.attrib["name"])
-    
+    xml_encoding = '<?xml version="1.0" encoding="utf-8"?>'
+
     filename_title = str(child.attrib["name"])
     # print(type(filename))
     # print(filename)
-    
+
     # make a new file based on image name
-    
     root = ET.Element("annotation")
     folder = ET.SubElement(root, "folder")
+    folder.text = image_folder_name
     filename = ET.SubElement(root, "filename")
-    path = ET.SubElement(root, "path" )
-    
+    filename.text = filename_title
+    path = ET.SubElement(root, "path")
+    path.text = saved_path + filename_title
+
     source = ET.SubElement(root, "source")
+    source.text = "Unknown"
+
     size = ET.SubElement(root, "size")
-    
+    width = ET.SubElement(size, "width")
+    height = ET.SubElement(size, "height")
+    depth = ET.SubElement(size, "depth")
+    width.text = child.attrib["width"]
+    height.text = child.attrib["height"]
+    depth.text = "3"
+
     segmented = ET.SubElement(root, "segmented")
-    object = ET.SubElement(root, "object")
-    
+    segmented.text = "0"
+
+    box_cnt = 0
+    for box in child.findall("box"):
+        object = ET.SubElement(root, "object")
+        name = ET.SubElement(object, "name")
+        name.text = label_dictionary.get(box.get("label"))
+
+        # unnecessary values
+        pose = ET.SubElement(object, "pose")
+        pose.text = "Unspecified"
+        truncated = ET.SubElement(object, "truncated")
+        truncated.text = "0"
+        difficult = ET.SubElement(object, "difficult")
+
+        # bounding box for each value
+        bndbox = ET.SubElement(object, "bndbox")
+        xmin = ET.SubElement(bndbox, "xmin")
+        xmin.text = box.get("xtl")
+        ymin = ET.SubElement(bndbox, "ymin")
+        ymin.text = box.get("ytl")
+        xmax = ET.SubElement(bndbox, "xmax")
+        xmax.text =  box.get("xbr")
+        ymax = ET.SubElement(bndbox, "ymax")
+        ymax.text = box.get("ybr")
+
+        box_cnt = box_cnt + 1
+        
+    print(filename_title, "total box count: ", box_cnt)
     tree = ET.ElementTree(root)
     output_xml_name = filename_title[:-4] + "_output.xml"
-    tree.write(output_xml_name)
-    
+    ET.indent(tree, "    ")
+    tree.write(output_xml_name, encoding="utf-8", xml_declaration=True)
 
     cnt = cnt + 1
-    if cnt > 0:
+    if cnt > 1:
         break
-    
-    
-    
-    
-    #child_points = parse_line(child.attrib['points']) # this is a string
-    
-    # if(child.attrib['label'] == 'f1'):
-    #     f1_label.append(child_points)
-    #     #print("f1")
-    # elif(child.attrib['label'] == 'f2'):
-    #     f2_label.append(child_points)
-    #     #print("f2")
-    # elif(child.attrib['label'] == 'f3'):
-    #     f3_label.append(child_points)
-    #     #print("f3")
-    # elif(child.attrib['label'] == 'f4'):
-    #     f4_label.append(child_points)
-    #     #np.concatenate((f4_label, child_points), axis=0)
-        #print("f4")
-
-print(cnt)
+print("total picture count: ", cnt)
