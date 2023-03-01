@@ -44,6 +44,8 @@ hw_timer_t* timeout_timer = nullptr;
 #define HREF_GPIO_NUM     23
 #define PCLK_GPIO_NUM     22
 
+#define FLASH_GPIO_NUM 4
+
 void IRAM_ATTR onTimer()
 {
   timer_done = 1;
@@ -78,31 +80,35 @@ void setup()
   Serial.println(WiFi.localIP());
     
   Serial.println("");
-
+  pinMode(FLASH_GPIO_NUM, OUTPUT);
   if (WiFi.status() != WL_CONNECTED) {
     Serial.println("Reset");
     
-    ledcAttachPin(4, 3);
+    /*ledcAttachPin(4, 3);
     ledcSetup(3, 5000, 8);
-    ledcWrite(3,10);
+    ledcWrite(3,10);*/
+    digitalWrite(FLASH_GPIO_NUM, HIGH);
     delay(200);
-    ledcWrite(3,0);
+    //ledcWrite(3,0);
+    digitalWrite(FLASH_GPIO_NUM, LOW);
     delay(200);    
-    ledcDetachPin(3);
+    //ledcDetachPin(3);
         
     delay(1000);
     ESP.restart();
   }
   else {
-    ledcAttachPin(4, 3);
-    ledcSetup(3, 5000, 8);
+    //ledcAttachPin(4, 3);
+    //ledcSetup(3, 5000, 8);
     for (int i=0;i<5;i++) {
-      ledcWrite(3,10);
+      //ledcWrite(3,10);
+      digitalWrite(FLASH_GPIO_NUM, HIGH);
       delay(200);
-      ledcWrite(3,0);
+      //ledcWrite(3,0);
+      digitalWrite(FLASH_GPIO_NUM, LOW);
       delay(200);    
     }
-    ledcDetachPin(3);      
+    //ledcDetachPin(3);      
   }
 
   camera_config_t config;
@@ -160,11 +166,13 @@ void setup()
 
 void take_picture()
 {
-  ledcWrite(3,10);
+  //ledcWrite(3,10);
+  digitalWrite(FLASH_GPIO_NUM, HIGH);
   delay(1000);
   SendCapturedImage();
   delay(200);
-  ledcWrite(3,0);
+  //ledcWrite(3,0);
+  digitalWrite(FLASH_GPIO_NUM, LOW);
 }
 
 void loop()
@@ -181,9 +189,11 @@ void loop()
     Serial.println("Timer has expired. Taking picture automatically.");
     for (uint8_t i = 0; i < 3; i++)
     {
-      ledcWrite(3,10);
+      //ledcWrite(3,10);
+      digitalWrite(FLASH_GPIO_NUM, HIGH);
       delay(200);
-      ledcWrite(3,0);
+      //ledcWrite(3,0);
+      digitalWrite(FLASH_GPIO_NUM, LOW);
       delay(200);    
     }
     take_picture();
