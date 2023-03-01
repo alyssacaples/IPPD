@@ -9,9 +9,10 @@ import sys
 
 #images must be inside the ippd github repo
 #all images should be inside the image folder
-image_folder_name = "Session1"  # where the images are located.
-xml_parse = "fly_image_set_1.xml" # this should later be based on image folder name
+image_folder_name = "Session1"  # where the images are located. CHANGE THIS TO YOUR IMAGE FOLDER NAME
+xml_parse = "fly_image_set_1.xml" # this should later be based on image folder name # CHANGE THIS TO YOUR OUTPUT XML 
 
+google_collab_file_path = "/content/drive/MyDrive/" + image_folder_name
 
 xml_output_folder = image_folder_name + "_"+ "OutputXMLs" 
 label_dictionary = {
@@ -20,7 +21,6 @@ label_dictionary = {
     "oriental": "Oriental Fruit Fly",
 }
 
-
 print(xml_output_folder)
 os.chdir("image_annotation") # inside the github
 saved_path = os.getcwd() + "\\" + image_folder_name + "\\"
@@ -28,9 +28,11 @@ saved_path = os.getcwd() + "\\" + image_folder_name + "\\"
 old_tree = ET.parse(xml_parse)
 old_root = old_tree.getroot()
 
+if not os.path.exists("XML_Output"):
+    os.mkdir("XML_Output")
+
 os.chdir("XML_Output") # where all xml files should go
 if not os.path.exists(xml_output_folder):
-    print("does not exist")
     os.mkdir(xml_output_folder)
 
 # change all xml files
@@ -49,11 +51,11 @@ for child in old_root.iter("image"):
     # make a new file based on image name
     root = ET.Element("annotation")
     folder = ET.SubElement(root, "folder")
-    folder.text = image_folder_name
+    folder.text = image_folder_name #google_collab_file_path #
     filename = ET.SubElement(root, "filename")
     filename.text = filename_title
     path = ET.SubElement(root, "path")
-    path.text = saved_path + filename_title
+    path.text = google_collab_file_path#saved_path + filename_title
 
     source = ET.SubElement(root, "source")
     source.text = "Unknown"
@@ -74,6 +76,8 @@ for child in old_root.iter("image"):
         object = ET.SubElement(root, "object")
         name = ET.SubElement(object, "name")
         name.text = label_dictionary.get(box.get("label"))
+
+        print(google_collab_file_path)
 
         # unnecessary values
         pose = ET.SubElement(object, "pose")
@@ -102,6 +106,6 @@ for child in old_root.iter("image"):
     tree.write(output_xml_name, encoding="utf-8", xml_declaration=True)
 
     cnt = cnt + 1
-    if cnt > 1:
-        break
+    # if cnt > 1:
+    #     break
 print("total picture count: ", cnt)
