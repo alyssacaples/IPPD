@@ -12,6 +12,7 @@ import sys
 image_folder_name = "Session1"  # where the images are located. CHANGE THIS TO YOUR IMAGE FOLDER NAME
 xml_parse = "fly_image_set_1.xml" # this should later be based on image folder name # CHANGE THIS TO YOUR OUTPUT XML 
 
+google_collab_file_path = "/content/drive/MyDrive/" + image_folder_name
 
 xml_output_folder = image_folder_name + "_"+ "OutputXMLs" 
 label_dictionary = {
@@ -48,11 +49,11 @@ for child in old_root.iter("image"):
     # make a new file based on image name
     root = ET.Element("annotation")
     folder = ET.SubElement(root, "folder")
-    folder.text = image_folder_name
+    folder.text = image_folder_name #google_collab_file_path #
     filename = ET.SubElement(root, "filename")
     filename.text = filename_title
     path = ET.SubElement(root, "path")
-    path.text = saved_path + filename_title
+    path.text = google_collab_file_path#saved_path + filename_title
 
     source = ET.SubElement(root, "source")
     source.text = "Unknown"
@@ -73,6 +74,8 @@ for child in old_root.iter("image"):
         object = ET.SubElement(root, "object")
         name = ET.SubElement(object, "name")
         name.text = label_dictionary.get(box.get("label"))
+
+        print(google_collab_file_path)
 
         # unnecessary values
         pose = ET.SubElement(object, "pose")
