@@ -28,9 +28,11 @@ saved_path = os.getcwd() + "\\" + image_folder_name + "\\"
 old_tree = ET.parse(xml_parse)
 old_root = old_tree.getroot()
 
+if not os.path.exists("XML_Output"):
+    os.mkdir("XML_Output")
+
 os.chdir("XML_Output") # where all xml files should go
 if not os.path.exists(xml_output_folder):
-    print("does not exist")
     os.mkdir(xml_output_folder)
 
 # change all xml files
