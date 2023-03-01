@@ -9,8 +9,8 @@ import sys
 
 #images must be inside the ippd github repo
 #all images should be inside the image folder
-image_folder_name = "Session1"  # where the images are located.
-xml_parse = "fly_image_set_1.xml" # this should later be based on image folder name
+image_folder_name = "Session1"  # where the images are located. CHANGE THIS TO YOUR IMAGE FOLDER NAME
+xml_parse = "fly_image_set_1.xml" # this should later be based on image folder name # CHANGE THIS TO YOUR OUTPUT XML 
 
 
 xml_output_folder = image_folder_name + "_"+ "OutputXMLs" 
@@ -19,7 +19,6 @@ label_dictionary = {
     "med": "Mediterranean Fruit Fly",
     "oriental": "Oriental Fruit Fly",
 }
-
 
 print(xml_output_folder)
 os.chdir("image_annotation") # inside the github
@@ -102,6 +101,6 @@ for child in old_root.iter("image"):
     tree.write(output_xml_name, encoding="utf-8", xml_declaration=True)
 
     cnt = cnt + 1
-    if cnt > 1:
-        break
+    # if cnt > 1:
+    #     break
 print("total picture count: ", cnt)
