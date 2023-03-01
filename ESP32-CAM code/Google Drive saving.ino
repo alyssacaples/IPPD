@@ -1,10 +1,10 @@
 // Enter your WiFi ssid and password
-//const char* ssid     = "Adam_iPhone";   //your network SSID
-//const char* password = "ixg2pot2qd691";   //your network password
-const char* ssid     = "";   //your network SSID
-const char* password = "";   //your network password
+const char* ssid     = "Adam_iPhone";   //your network SSID
+const char* password = "ixg2pot2qd691";   //your network password
+//const char* ssid     = "";   //your network SSID
+//const char* password = "";   //your network password
 
-String myScript = "";    //Create your Google Apps Script and replace the "myScript" path.
+String myScript = "/macros/s/AKfycbyqkBmG-2DG1GjpVwpL0cepxmOdrdejhOuRFSScoJwIZj0LQvc8DxguyAodCoIkd3Bs4Q/exec";    //Create your Google Apps Script and replace the "myScript" path.
 String myLineNotifyToken = "myToken=**********";    //Line Notify Token. You can set the value of xxxxxxxxxx empty if you don't want to send picture to Linenotify.
 String myFoldername = "&myFoldername=ESP32-CAM";
 String myFilename = "&myFilename=ESP32-CAM.jpg";
@@ -148,7 +148,7 @@ void setup()
   //drop down frame size for higher initial frame rate
   sensor_t * s = esp_camera_sensor_get();
   //s->set_framesize(s, FRAMESIZE_VGA);  // UXGA|SXGA|XGA|SVGA|VGA|CIF|QVGA|HQVGA|QQVGA
-  s->set_framesize(s, FRAMESIZE_XGA);
+  s->set_framesize(s, FRAMESIZE_SXGA);
 
   Serial.println("Timer started");
   timeout_timer = timerBegin(0, 80, true);
@@ -220,45 +220,44 @@ String SendCapturedImage() {
     //crop_image(fb, 500, 500, 400, 400);
     char *input = (char *)fb->buf;
     char output[base64_enc_len(3)];
-    String imageFile = "data:image/jpeg;base64,";
-    //char imageFil[1000000];
+    //String imageFile = "data:image/jpeg;base64,";
     String init_image_data = "data:image/jpeg;base64,";
-    /*for (int i=0;i<init_image_data.length();i++)
-    {
-      imageFil[i] = init_image_data[i];
-    }
-    Serial.println("Hello!");
-    delay(10000);*/
+    int image_file_length = init_image_data.length();
+    //first determine how long the base64 encoded image is
     for (int i=0;i<fb->len;i++) {
       base64_encode(output, (input++), 3);
       if (i%3==0)
       {
-        imageFile += urlencode(String(output));
-        /*String encoded_str = urlencode(String(output));
-        for (int j = 0; j < 4; j++)
-          imageFil[i+init_image_data.length()] = encoded_str[j];   */     
+        //imageFile += urlencode(String(output));
+        image_file_length += urlencode(String(output)).length();
       }
     }
-    //imageFil[init_image_data.length() + fb->len] = 0;
-    //Serial.println(imageFil);//.substring(0, 200));
-    //Serial.println(imageFile.substring(65500, 65580));
-    //for (int i = 65535; i < 65565; i++)
-      //Serial.println((int)imageFile[i]);
-    //String imageFile = imageFil;
+    //this is metadata with a fixed length. all these variables are defined above.
     String Data = myLineNotifyToken+myFoldername+myFilename+myImage;
-    
+
+    Serial.println(image_file_length);
+    //Serial.println(imageFile.length());    
     client_tcp.println("POST " + myScript + " HTTP/1.1");
     client_tcp.println("Host: " + String(myDomain));
-    client_tcp.println("Content-Length: " + String(Data.length()+imageFile.length()));
+    client_tcp.println("Content-Length: " + String(Data.length()+image_file_length));
     client_tcp.println("Content-Type: application/x-www-form-urlencoded");
     client_tcp.println("Connection: keep-alive");
     client_tcp.println();
     
     client_tcp.print(Data);
-    int Index;
-    for (Index = 0; Index < imageFile.length(); Index = Index+1000) {
-      client_tcp.print(imageFile.substring(Index, Index+1000));
+    client_tcp.print(init_image_data);
+
+    input = (char *)fb->buf;
+    for (int i=0;i<image_file_length;i++) {
+      base64_encode(output, (input++), 3);
+      if (i%3==0)
+      {
+        client_tcp.print(urlencode(String(output)));
+      }
     }
+    /*for (int i = 0; i < imageFile.length(); i = i+1000) {
+      client_tcp.print(imageFile.substring(i, i+1000));
+    }*/
     esp_camera_fb_return(fb);
     
     int waitTime = 10000;   // timeout 10 seconds
