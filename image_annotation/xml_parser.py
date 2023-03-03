@@ -12,7 +12,7 @@ import sys
 image_folder_name = "Session1"  # where the images are located. CHANGE THIS TO YOUR IMAGE FOLDER NAME
 xml_parse = "fly_image_set_1.xml" # this should later be based on image folder name # CHANGE THIS TO YOUR OUTPUT XML 
 
-google_collab_file_path = "/content/drive/MyDrive/" + image_folder_name
+google_collab_file_path = "/content/drive/MyDrive/" + image_folder_name + "/train"
 
 xml_output_folder = image_folder_name + "_"+ "OutputXMLs" 
 label_dictionary = {
@@ -22,7 +22,7 @@ label_dictionary = {
 }
 
 print(xml_output_folder)
-os.chdir("image_annotation") # inside the github
+# os.chdir("image_annotation") # inside the github
 saved_path = os.getcwd() + "\\" + image_folder_name + "\\"
 
 old_tree = ET.parse(xml_parse)
@@ -85,17 +85,18 @@ for child in old_root.iter("image"):
         truncated = ET.SubElement(object, "truncated")
         truncated.text = "0"
         difficult = ET.SubElement(object, "difficult")
+        difficult.text = "0"
 
         # bounding box for each value
         bndbox = ET.SubElement(object, "bndbox")
         xmin = ET.SubElement(bndbox, "xmin")
-        xmin.text = box.get("xtl")
+        xmin.text = str(round(float(box.get("xtl"))))
         ymin = ET.SubElement(bndbox, "ymin")
-        ymin.text = box.get("ytl")
+        ymin.text = str(round(float(box.get("ytl"))))
         xmax = ET.SubElement(bndbox, "xmax")
-        xmax.text =  box.get("xbr")
+        xmax.text =  str(round(float(box.get("xbr"))))
         ymax = ET.SubElement(bndbox, "ymax")
-        ymax.text = box.get("ybr")
+        ymax.text = str(round(float(box.get("ybr"))))
 
         box_cnt = box_cnt + 1
         
@@ -103,7 +104,7 @@ for child in old_root.iter("image"):
     tree = ET.ElementTree(root)
     output_xml_name = filename_title[:-4] + "_output.xml"
     ET.indent(tree, "    ")
-    tree.write(output_xml_name, encoding="utf-8", xml_declaration=True)
+    tree.write(output_xml_name, encoding="utf-8", xml_declaration=False)
 
     cnt = cnt + 1
     # if cnt > 1:
