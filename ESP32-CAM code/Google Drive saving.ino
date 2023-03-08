@@ -44,6 +44,8 @@ hw_timer_t* timeout_timer = nullptr;
 #define HREF_GPIO_NUM     23
 #define PCLK_GPIO_NUM     22
 
+#define FLASH_GPIO_NUM 4
+
 void IRAM_ATTR onTimer()
 {
   timer_done = 1;
@@ -78,31 +80,35 @@ void setup()
   Serial.println(WiFi.localIP());
     
   Serial.println("");
-
+  pinMode(FLASH_GPIO_NUM, OUTPUT);
   if (WiFi.status() != WL_CONNECTED) {
     Serial.println("Reset");
     
-    ledcAttachPin(4, 3);
+    /*ledcAttachPin(4, 3);
     ledcSetup(3, 5000, 8);
-    ledcWrite(3,10);
+    ledcWrite(3,10);*/
+    digitalWrite(FLASH_GPIO_NUM, HIGH);
     delay(200);
-    ledcWrite(3,0);
+    //ledcWrite(3,0);
+    digitalWrite(FLASH_GPIO_NUM, LOW);
     delay(200);    
-    ledcDetachPin(3);
+    //ledcDetachPin(3);
         
     delay(1000);
     ESP.restart();
   }
   else {
-    ledcAttachPin(4, 3);
-    ledcSetup(3, 5000, 8);
+    //ledcAttachPin(4, 3);
+    //ledcSetup(3, 5000, 8);
     for (int i=0;i<5;i++) {
-      ledcWrite(3,10);
+      //ledcWrite(3,10);
+      digitalWrite(FLASH_GPIO_NUM, HIGH);
       delay(200);
-      ledcWrite(3,0);
+      //ledcWrite(3,0);
+      digitalWrite(FLASH_GPIO_NUM, LOW);
       delay(200);    
     }
-    ledcDetachPin(3);      
+    //ledcDetachPin(3);      
   }
 
   camera_config_t config;
@@ -130,6 +136,7 @@ void setup()
   if(psramFound()){
     config.frame_size = FRAMESIZE_UXGA;
     config.jpeg_quality = 10;  //0-63 lower number means higher quality
+    //config.jpeg_quality = 6;
     config.fb_count = 2;
   } else {
     config.frame_size = FRAMESIZE_SVGA;
@@ -148,7 +155,7 @@ void setup()
   //drop down frame size for higher initial frame rate
   sensor_t * s = esp_camera_sensor_get();
   //s->set_framesize(s, FRAMESIZE_VGA);  // UXGA|SXGA|XGA|SVGA|VGA|CIF|QVGA|HQVGA|QQVGA
-  s->set_framesize(s, FRAMESIZE_SXGA);
+  s->set_framesize(s, FRAMESIZE_QSXGA);
 
   Serial.println("Timer started");
   timeout_timer = timerBegin(0, 80, true);
@@ -159,11 +166,13 @@ void setup()
 
 void take_picture()
 {
-  ledcWrite(3,10);
+  //ledcWrite(3,10);
+  digitalWrite(FLASH_GPIO_NUM, HIGH);
   delay(1000);
   SendCapturedImage();
   delay(200);
-  ledcWrite(3,0);
+  //ledcWrite(3,0);
+  digitalWrite(FLASH_GPIO_NUM, LOW);
 }
 
 void loop()
@@ -180,9 +189,11 @@ void loop()
     Serial.println("Timer has expired. Taking picture automatically.");
     for (uint8_t i = 0; i < 3; i++)
     {
-      ledcWrite(3,10);
+      //ledcWrite(3,10);
+      digitalWrite(FLASH_GPIO_NUM, HIGH);
       delay(200);
-      ledcWrite(3,0);
+      //ledcWrite(3,0);
+      digitalWrite(FLASH_GPIO_NUM, LOW);
       delay(200);    
     }
     take_picture();
@@ -248,13 +259,22 @@ String SendCapturedImage() {
     client_tcp.print(init_image_data);
 
     input = (char *)fb->buf;
+    String packet_string = "";
     for (int i=0;i<image_file_length;i++) {
       base64_encode(output, (input++), 3);
       if (i%3==0)
       {
-        client_tcp.print(urlencode(String(output)));
+        packet_string += urlencode(String(output));
       }
+      if (i%1200==0)
+      {
+        //Serial.println(packet_string.length());
+        client_tcp.print(packet_string);
+        packet_string = "";
+      }
+      
     }
+    client_tcp.print(packet_string);
     /*for (int i = 0; i < imageFile.length(); i = i+1000) {
       client_tcp.print(imageFile.substring(i, i+1000));
     }*/
