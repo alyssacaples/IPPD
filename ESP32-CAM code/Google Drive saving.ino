@@ -46,6 +46,11 @@ hw_timer_t* timeout_timer = nullptr;
 
 #define FLASH_GPIO_NUM 4
 
+#define TIMEOUT_SECONDS 4
+#define LED_DELAY_MS 1000
+//#define SLEEP_TIME_US = 1 * 60 * 60 * 1000 * 1000
+#define SLEEP_TIME_US 20 * 1000 * 1000
+
 void IRAM_ATTR onTimer()
 {
   timer_done = 1;
@@ -60,7 +65,17 @@ void setup()
 
   //set GPIO2 as input
   pinMode(2, INPUT);
-  
+  pinMode(FLASH_GPIO_NUM, OUTPUT);
+/*ledcAttachPin(4, 3);
+  ledcSetup(3, 5000, 8);
+  ledcWrite(3,10);*/
+  digitalWrite(FLASH_GPIO_NUM, HIGH);
+  delay(200);
+  //ledcWrite(3,0);
+  digitalWrite(FLASH_GPIO_NUM, LOW);
+  delay(200);    
+  //ledcDetachPin(3);
+
   WiFi.mode(WIFI_STA);
 
   Serial.println("");
@@ -80,19 +95,11 @@ void setup()
   Serial.println(WiFi.localIP());
     
   Serial.println("");
-  pinMode(FLASH_GPIO_NUM, OUTPUT);
+  
   if (WiFi.status() != WL_CONNECTED) {
     Serial.println("Reset");
     
-    /*ledcAttachPin(4, 3);
-    ledcSetup(3, 5000, 8);
-    ledcWrite(3,10);*/
-    digitalWrite(FLASH_GPIO_NUM, HIGH);
-    delay(200);
-    //ledcWrite(3,0);
-    digitalWrite(FLASH_GPIO_NUM, LOW);
-    delay(200);    
-    //ledcDetachPin(3);
+    //formerly blink here
         
     delay(1000);
     ESP.restart();
@@ -134,10 +141,11 @@ void setup()
   config.pixel_format = PIXFORMAT_JPEG;
   //init with high specs to pre-allocate larger buffers
   if(psramFound()){
-    config.frame_size = FRAMESIZE_UXGA;
+    config.frame_size = FRAMESIZE_QSXGA;
     config.jpeg_quality = 10;  //0-63 lower number means higher quality
-    //config.jpeg_quality = 6;
-    config.fb_count = 2;
+    //config.jpeg_quality = 8;
+    //config.fb_count = 2;
+    config.fb_count = 1;
   } else {
     config.frame_size = FRAMESIZE_SVGA;
     config.jpeg_quality = 12;  //0-63 lower number means higher quality
@@ -160,19 +168,8 @@ void setup()
   Serial.println("Timer started");
   timeout_timer = timerBegin(0, 80, true);
   timerAttachInterrupt(timeout_timer, &onTimer, true);
-  timerAlarmWrite(timeout_timer, 120000000, true);
+  timerAlarmWrite(timeout_timer, 1000000 * TIMEOUT_SECONDS, true);
   timerAlarmEnable(timeout_timer);
-}
-
-void take_picture()
-{
-  //ledcWrite(3,10);
-  digitalWrite(FLASH_GPIO_NUM, HIGH);
-  delay(1000);
-  SendCapturedImage();
-  delay(200);
-  //ledcWrite(3,0);
-  digitalWrite(FLASH_GPIO_NUM, LOW);
 }
 
 void loop()
@@ -196,13 +193,13 @@ void loop()
       digitalWrite(FLASH_GPIO_NUM, LOW);
       delay(200);    
     }
-    take_picture();
+    SendCapturedImage();
     Serial.println("Going to sleep now");
-    esp_sleep_enable_timer_wakeup(60 * 60 * 1000000);
+    esp_sleep_enable_timer_wakeup(SLEEP_TIME_US);
     Serial.flush();
     esp_deep_sleep_start();
   }
-  take_picture();
+  SendCapturedImage();
   timerRestart(timeout_timer);
   timer_done = 0;
   //delay(12000);
@@ -213,7 +210,11 @@ String SendCapturedImage() {
   String getAll="", getBody = "";
   
   camera_fb_t * fb = NULL;
+  digitalWrite(FLASH_GPIO_NUM, HIGH);
+  delay(LED_DELAY_MS);
   fb = esp_camera_fb_get();  
+  delay(LED_DELAY_MS);
+  digitalWrite(FLASH_GPIO_NUM, LOW);
   if(!fb) {
     Serial.println("Camera capture failed");
     delay(1000);
