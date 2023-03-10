@@ -115,6 +115,7 @@ void setup()
       digitalWrite(FLASH_GPIO_NUM, LOW);
       delay(200);    
     }
+    digitalWrite(FLASH_GPIO_NUM, HIGH);
     //ledcDetachPin(3);      
   }
 
@@ -165,16 +166,22 @@ void setup()
   //s->set_framesize(s, FRAMESIZE_VGA);  // UXGA|SXGA|XGA|SVGA|VGA|CIF|QVGA|HQVGA|QQVGA
   s->set_framesize(s, FRAMESIZE_QSXGA);
 
-  Serial.println("Timer started");
+  SendCapturedImage();
+  Serial.println("Going to sleep now");
+  esp_sleep_enable_timer_wakeup(SLEEP_TIME_US);
+  Serial.flush();
+  esp_deep_sleep_start();
+
+  /*Serial.println("Timer started");
   timeout_timer = timerBegin(0, 80, true);
   timerAttachInterrupt(timeout_timer, &onTimer, true);
   timerAlarmWrite(timeout_timer, 1000000 * TIMEOUT_SECONDS, true);
-  timerAlarmEnable(timeout_timer);
+  timerAlarmEnable(timeout_timer);*/
 }
 
 void loop()
 {
-  uint8_t button_pressed = 0;
+  /*uint8_t button_pressed = 0;
   while (!button_pressed && !timer_done)
   {
     button_pressed = digitalRead(2);
@@ -202,7 +209,8 @@ void loop()
   SendCapturedImage();
   timerRestart(timeout_timer);
   timer_done = 0;
-  //delay(12000);
+  //delay(12000);*/
+  delay(100);
 }
 
 String SendCapturedImage() {
@@ -210,8 +218,8 @@ String SendCapturedImage() {
   String getAll="", getBody = "";
   
   camera_fb_t * fb = NULL;
-  digitalWrite(FLASH_GPIO_NUM, HIGH);
-  delay(LED_DELAY_MS);
+  //digitalWrite(FLASH_GPIO_NUM, HIGH);
+  //delay(LED_DELAY_MS);
   fb = esp_camera_fb_get();  
   delay(LED_DELAY_MS);
   digitalWrite(FLASH_GPIO_NUM, LOW);
