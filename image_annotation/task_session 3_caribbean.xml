@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>108201</id>
+      <name>session 3 Caribbean</name>
+      <size>80</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2023-03-21 11:49:24.264375+00:00</created>
+      <updated>2023-03-21 13:13:20.115262+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>79</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>107260</id>
+          <start>0</start>
+          <stop>79</stop>
+          <url>https://app.cvat.ai/api/jobs/107260</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>alyssacaples</username>
+        <email>alyssacaples@ufl.edu</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>caribbean</name>
+          <color>#33ddff</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </task>
+    <dumped>2023-03-21 21:43:58.092687+00:00</dumped>
+  </meta>
+  <image id="0" name="picture1.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="957.68" ytl="1501.19" xbr="1008.30" ybr="1588.57" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="975.99" ytl="870.24" xbr="1079.56" ybr="950.80" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1423.94" ytl="440.01" xbr="1512.91" ybr="513.00" z_order="0">
+    </box>
+  </image>
+  <image id="1" name="picture10.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1303.02" ytl="500.72" xbr="1381.28" ybr="590.49" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1243.42" ytl="1476.95" xbr="1348.38" ybr="1569.12" z_order="0">
+    </box>
+  </image>
+  <image id="2" name="picture11.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="829.54" ytl="497.87" xbr="890.81" ybr="605.50" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="834.34" ytl="1369.00" xbr="938.23" ybr="1438.27" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1365.71" ytl="302.64" xbr="1442.52" ybr="390.11" z_order="0">
+    </box>
+  </image>
+  <image id="3" name="picture12.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1030.39" ytl="616.97" xbr="1139.77" ybr="702.04" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1415.97" ytl="902.23" xbr="1518.72" ybr="1001.67" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="980.68" ytl="805.89" xbr="1062.43" ybr="864.45" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1094.47" ytl="1048.95" xbr="1190.59" ybr="1159.44" z_order="0">
+    </box>
+  </image>
+  <image id="4" name="picture13.jpg" width="2560" height="1920">
+  </image>
+  <image id="5" name="picture14.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="889.87" ytl="1174.70" xbr="1003.03" ybr="1265.49" z_order="0">
+    </box>
+  </image>
+  <image id="6" name="picture15.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1483.58" ytl="1450.14" xbr="1573.73" ybr="1530.06" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1526.42" ytl="1294.77" xbr="1609.53" ybr="1388.12" z_order="0">
+    </box>
+  </image>
+  <image id="7" name="picture16.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="920.33" ytl="1374.63" xbr="1017.12" ybr="1459.44" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1259.51" ytl="1324.62" xbr="1366.61" ybr="1421.59" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="848.07" ytl="479.76" xbr="931.01" ybr="556.23" z_order="0">
+    </box>
+  </image>
+  <image id="8" name="picture17.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1570.22" ytl="570.18" xbr="1671.23" ybr="645.29" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1455.15" ytl="578.69" xbr="1538.40" ybr="652.69" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1288.37" ytl="1056.36" xbr="1401.61" ybr="1150.27" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="886.92" ytl="1094.08" xbr="994.34" ybr="1179.11" z_order="0">
+    </box>
+  </image>
+  <image id="9" name="picture18.jpg" width="2560" height="1920">
+  </image>
+  <image id="10" name="picture19.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1131.93" ytl="299.63" xbr="1225.53" ybr="411.65" z_order="0">
+    </box>
+  </image>
+  <image id="11" name="picture2.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1512.22" ytl="1436.14" xbr="1608.13" ybr="1507.75" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1481.60" ytl="878.37" xbr="1566.45" ybr="947.31" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="928.54" ytl="638.43" xbr="1008.46" ybr="746.05" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="989.67" ytl="1238.83" xbr="1072.79" ybr="1294.45" z_order="0">
+    </box>
+  </image>
+  <image id="12" name="picture20.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="884.37" ytl="65.98" xbr="984.53" ybr="126.72" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1412.59" ytl="499.47" xbr="1519.68" ybr="573.00" z_order="0">
+    </box>
+  </image>
+  <image id="13" name="picture21.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1405.98" ytl="554.43" xbr="1518.76" ybr="629.47" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="810.35" ytl="900.85" xbr="895.05" ybr="1006.73" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1375.21" ytl="1190.30" xbr="1441.06" ybr="1284.29" z_order="0">
+    </box>
+  </image>
+  <image id="14" name="picture22.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="774.79" ytl="332.61" xbr="857.82" ybr="407.64" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1440.20" ytl="1390.33" xbr="1536.88" ybr="1487.77" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1320.15" ytl="578.06" xbr="1413.92" ybr="666.50" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1403.48" ytl="1570.08" xbr="1462.62" ybr="1632.95" z_order="0">
+    </box>
+  </image>
+  <image id="15" name="picture23.jpg" width="2560" height="1920">
+  </image>
+  <image id="16" name="picture238.jpg" width="2560" height="1920">
+  </image>
+  <image id="17" name="picture239.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1366.27" ytl="684.58" xbr="1442.12" ybr="743.04" z_order="0">
+    </box>
+  </image>
+  <image id="18" name="picture24.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1140.18" ytl="990.69" xbr="1238.64" ybr="1094.27" z_order="0">
+    </box>
+  </image>
+  <image id="19" name="picture240.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1213.53" ytl="1262.69" xbr="1281.94" ybr="1347.01" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1353.53" ytl="689.95" xbr="1461.71" ybr="802.91" z_order="0">
+    </box>
+  </image>
+  <image id="20" name="picture241.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1043.14" ytl="898.75" xbr="1143.84" ybr="1015.97" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1238.45" ytl="1357.50" xbr="1330.51" ybr="1426.55" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1082.76" ytl="799.84" xbr="1166.52" ybr="873.37" z_order="0">
+    </box>
+  </image>
+  <image id="21" name="picture242.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1495.53" ytl="951.18" xbr="1597.83" ybr="1015.76" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1133.84" ytl="314.21" xbr="1217.83" ybr="364.16" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1415.22" ytl="1099.40" xbr="1519.56" ybr="1200.63" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1078.22" ytl="1177.26" xbr="1155.58" ybr="1256.54" z_order="0">
+    </box>
+  </image>
+  <image id="22" name="picture243.jpg" width="2560" height="1920">
+  </image>
+  <image id="23" name="picture244.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="717.86" ytl="509.73" xbr="769.66" ybr="597.30" z_order="0">
+    </box>
+  </image>
+  <image id="24" name="picture245.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1309.92" ytl="1347.75" xbr="1404.22" ybr="1408.48" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="856.75" ytl="1145.29" xbr="936.67" ybr="1204.11" z_order="0">
+    </box>
+  </image>
+  <image id="25" name="picture246.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1592.42" ytl="1375.39" xbr="1675.45" ybr="1435.33" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="757.45" ytl="830.34" xbr="828.42" ybr="893.00" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1106.37" ytl="603.94" xbr="1171.64" ybr="672.31" z_order="0">
+    </box>
+  </image>
+  <image id="26" name="picture247.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="782.76" ytl="262.69" xbr="840.30" ybr="319.17" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1216.96" ytl="1600.33" xbr="1287.29" ybr="1664.26" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1015.48" ytl="1161.47" xbr="1085.19" ybr="1230.73" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1414.59" ytl="253.09" xbr="1523.82" ybr="344.99" z_order="0">
+    </box>
+  </image>
+  <image id="27" name="picture248.jpg" width="2560" height="1920">
+  </image>
+  <image id="28" name="picture249.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1284.29" ytl="626.51" xbr="1371.24" ybr="696.20" z_order="0">
+    </box>
+  </image>
+  <image id="29" name="picture25.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="929.19" ytl="544.80" xbr="1030.85" ybr="615.77" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1504.23" ytl="1412.91" xbr="1590.54" ybr="1506.15" z_order="0">
+    </box>
+  </image>
+  <image id="30" name="picture250.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="859.88" ytl="793.32" xbr="932.77" ybr="864.29" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1246.58" ytl="1433.87" xbr="1314.66" ybr="1488.26" z_order="0">
+    </box>
+  </image>
+  <image id="31" name="picture251.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="895.24" ytl="1435.86" xbr="964.29" ybr="1510.44" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="958.60" ytl="519.71" xbr="1061.17" ybr="613.84" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1502.95" ytl="931.52" xbr="1578.43" ybr="996.79" z_order="0">
+    </box>
+  </image>
+  <image id="32" name="picture252.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1321.69" ytl="303.03" xbr="1388.29" ybr="379.22" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1487.41" ytl="1460.62" xbr="1594.19" ybr="1553.97" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1065.02" ytl="1300.01" xbr="1119.41" ybr="1403.24" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1462.45" ytl="622.18" xbr="1549.15" ybr="721.15" z_order="0">
+    </box>
+  </image>
+  <image id="33" name="picture253.jpg" width="2560" height="1920">
+  </image>
+  <image id="34" name="picture254.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1469.51" ytl="1489.59" xbr="1571.17" ybr="1580.38" z_order="0">
+    </box>
+  </image>
+  <image id="35" name="picture255.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1470.51" ytl="1495.44" xbr="1571.78" ybr="1586.75" z_order="0">
+    </box>
+  </image>
+  <image id="36" name="picture256.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="870.22" ytl="879.05" xbr="986.08" ybr="943.50" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1216.39" ytl="1430.00" xbr="1293.20" ybr="1483.73" z_order="0">
+    </box>
+  </image>
+  <image id="37" name="picture26.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="932.75" ytl="1408.59" xbr="1012.67" ybr="1508.22" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1054.12" ytl="772.96" xbr="1166.54" ybr="839.03" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1210.57" ytl="525.43" xbr="1300.34" ybr="605.22" z_order="0">
+    </box>
+  </image>
+  <image id="38" name="picture27.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1360.05" ytl="1461.71" xbr="1435.50" ybr="1557.62" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1580.34" ytl="1065.65" xbr="1661.15" ybr="1157.56" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="939.74" ytl="1205.97" xbr="1037.18" ybr="1301.87" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="711.30" ytl="516.82" xbr="781.45" ybr="586.53" z_order="0">
+    </box>
+  </image>
+  <image id="39" name="picture28.jpg" width="2560" height="1920">
+  </image>
+  <image id="40" name="picture29.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1286.07" ytl="1377.98" xbr="1380.44" ybr="1455.47" z_order="0">
+    </box>
+  </image>
+  <image id="41" name="picture3.jpg" width="2560" height="1920">
+  </image>
+  <image id="42" name="picture30.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1581.65" ytl="1101.43" xbr="1682.34" ybr="1172.29" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="691.46" ytl="609.21" xbr="759.74" ybr="689.00" z_order="0">
+    </box>
+  </image>
+  <image id="43" name="picture31.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1260.37" ytl="1522.02" xbr="1342.42" ybr="1598.75" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="736.55" ytl="1363.89" xbr="824.14" ybr="1457.24" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1169.46" ytl="215.98" xbr="1258.33" ybr="295.90" z_order="0">
+    </box>
+  </image>
+  <image id="44" name="picture32.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="905.36" ytl="1480.18" xbr="1009.71" ybr="1526.98" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1569.56" ytl="1114.59" xbr="1677.74" ybr="1198.99" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="697.34" ytl="590.27" xbr="793.18" ybr="669.92" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="938.66" ytl="946.97" xbr="1041.49" ybr="1023.69" z_order="0">
+    </box>
+  </image>
+  <image id="45" name="picture33.jpg" width="2560" height="1920">
+  </image>
+  <image id="46" name="picture34.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="722.84" ytl="344.55" xbr="820.96" ybr="433.35" z_order="0">
+    </box>
+  </image>
+  <image id="47" name="picture35.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="675.72" ytl="1304.00" xbr="756.18" ybr="1406.30" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1589.65" ytl="1127.64" xbr="1654.86" ybr="1197.34" z_order="0">
+    </box>
+  </image>
+  <image id="48" name="picture36.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="725.38" ytl="953.15" xbr="828.21" ybr="1047.99" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1578.61" ytl="700.18" xbr="1678.77" ybr="792.89" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1492.67" ytl="1506.39" xbr="1559.88" ybr="1571.75" z_order="0">
+    </box>
+  </image>
+  <image id="49" name="picture37.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1138.07" ytl="1500.58" xbr="1232.69" ybr="1588.18" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="789.04" ytl="330.96" xbr="880.50" ybr="419.32" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1128.50" ytl="945.53" xbr="1231.86" ybr="1036.11" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1606.90" ytl="1114.86" xbr="1674.03" ybr="1185.72" z_order="0">
+    </box>
+  </image>
+  <image id="50" name="picture38.jpg" width="2560" height="1920">
+  </image>
+  <image id="51" name="picture39.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="961.54" ytl="1407.81" xbr="1054.25" ybr="1479.42" z_order="0">
+    </box>
+  </image>
+  <image id="52" name="picture4.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1250.16" ytl="1166.22" xbr="1339.93" ybr="1246.02" z_order="0">
+    </box>
+  </image>
+  <image id="53" name="picture40.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="648.44" ytl="891.66" xbr="738.59" ybr="992.68" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1556.08" ytl="645.25" xbr="1656.46" ybr="753.30" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1526.00" ytl="1495.74" xbr="1624.79" ybr="1557.90" z_order="0">
+    </box>
+  </image>
+  <image id="54" name="picture41.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="975.65" ytl="620.19" xbr="1080.44" ybr="699.66" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1009.52" ytl="969.96" xbr="1077.97" ybr="1070.23" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1451.03" ytl="1151.75" xbr="1556.53" ybr="1255.96" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="956.16" ytl="1412.20" xbr="1049.76" ybr="1495.83" z_order="0">
+    </box>
+  </image>
+  <image id="55" name="picture42.jpg" width="2560" height="1920">
+  </image>
+  <image id="56" name="picture43.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="655.96" ytl="371.33" xbr="751.86" ybr="465.11" z_order="0">
+    </box>
+  </image>
+  <image id="57" name="picture44.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1521.23" ytl="1472.21" xbr="1611.80" ybr="1544.67" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="703.53" ytl="1218.79" xbr="801.21" ybr="1300.04" z_order="0">
+    </box>
+  </image>
+  <image id="58" name="picture45.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="913.01" ytl="483.04" xbr="997.41" ybr="550.81" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="991.82" ytl="1490.55" xbr="1099.54" ybr="1584.46" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1568.42" ytl="909.69" xbr="1657.29" ybr="1021.57" z_order="0">
+    </box>
+  </image>
+  <image id="59" name="picture46.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1225.04" ytl="281.69" xbr="1315.32" ybr="352.36" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1491.23" ytl="1440.83" xbr="1587.13" ybr="1540.99" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="842.30" ytl="1078.18" xbr="946.33" ybr="1161.04" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="900.97" ytl="529.39" xbr="999.54" ybr="607.53" z_order="0">
+    </box>
+  </image>
+  <image id="60" name="picture47.jpg" width="2560" height="1920">
+  </image>
+  <image id="61" name="picture48.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="904.66" ytl="613.84" xbr="1013.44" ybr="715.51" z_order="0">
+    </box>
+  </image>
+  <image id="62" name="picture49.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1351.55" ytl="1449.44" xbr="1438.50" ybr="1547.26" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1155.90" ytl="1406.60" xbr="1260.76" ybr="1478.85" z_order="0">
+    </box>
+  </image>
+  <image id="63" name="picture5.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="878.81" ytl="920.13" xbr="988.19" ybr="1001.89" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="717.51" ytl="1075.91" xbr="808.10" ybr="1183.08" z_order="0">
+    </box>
+  </image>
+  <image id="64" name="picture50.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1500.51" ytl="495.51" xbr="1586.44" ybr="591.41" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1606.39" ytl="664.30" xbr="1670.83" ybr="748.70" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1429.92" ytl="644.35" xbr="1535.80" ybr="734.12" z_order="0">
+    </box>
+  </image>
+  <image id="65" name="picture51.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1165.73" ytl="1079.33" xbr="1251.87" ybr="1144.60" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1127.06" ytl="1320.84" xbr="1225.09" ybr="1409.82" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="815.77" ytl="914.65" xbr="923.22" ybr="999.90" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1156.54" ytl="572.15" xbr="1268.87" ybr="649.85" z_order="0">
+    </box>
+  </image>
+  <image id="66" name="picture52.jpg" width="2560" height="1920">
+  </image>
+  <image id="67" name="picture53.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="773.89" ytl="1145.67" xbr="864.04" ybr="1239.02" z_order="0">
+    </box>
+  </image>
+  <image id="68" name="picture54.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="871.15" ytl="997.36" xbr="948.64" ybr="1112.44" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1338.38" ytl="207.15" xbr="1411.91" ybr="281.32" z_order="0">
+    </box>
+  </image>
+  <image id="69" name="picture55.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1556.40" ytl="1388.58" xbr="1658.04" ybr="1479.17" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1360.84" ytl="1112.37" xbr="1455.86" ybr="1228.38" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1521.04" ytl="1094.69" xbr="1626.00" ybr="1207.39" z_order="0">
+    </box>
+  </image>
+  <image id="70" name="picture56.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1207.27" ytl="684.40" xbr="1310.08" ybr="784.91" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="746.55" ytl="1173.74" xbr="857.80" ybr="1242.03" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="902.30" ytl="1268.88" xbr="1005.10" ybr="1340.23" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="766.49" ytl="1405.45" xbr="860.10" ybr="1506.72" z_order="0">
+    </box>
+  </image>
+  <image id="71" name="picture57.jpg" width="2560" height="1920">
+  </image>
+  <image id="72" name="picture58.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1365.94" ytl="1412.54" xbr="1462.48" ybr="1512.92" z_order="0">
+    </box>
+  </image>
+  <image id="73" name="picture59.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="681.71" ytl="1188.38" xbr="787.78" ybr="1280.08" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="658.51" ytl="842.57" xbr="740.27" ybr="928.75" z_order="0">
+    </box>
+  </image>
+  <image id="74" name="picture6.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1569.19" ytl="821.26" xbr="1660.62" ybr="917.17" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1178.84" ytl="918.89" xbr="1288.62" ybr="1022.30" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1516.64" ytl="1442.26" xbr="1604.56" ybr="1515.26" z_order="0">
+    </box>
+  </image>
+  <image id="75" name="picture60.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1491.84" ytl="1149.81" xbr="1586.21" ybr="1253.38" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="742.33" ytl="737.95" xbr="847.44" ybr="829.25" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1472.66" ytl="1356.96" xbr="1572.40" ybr="1442.89" z_order="0">
+    </box>
+  </image>
+  <image id="76" name="picture61.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="1495.21" ytl="605.22" xbr="1568.87" ybr="675.81" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1007.01" ytl="1417.63" xbr="1128.54" ybr="1513.38" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1456.85" ytl="402.67" xbr="1555.83" ybr="500.88" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="845.16" ytl="229.91" xbr="954.39" ybr="306.72" z_order="0">
+    </box>
+  </image>
+  <image id="77" name="picture7.jpg" width="2560" height="1920">
+    <box label="caribbean" source="manual" occluded="0" xtl="834.89" ytl="549.18" xbr="946.25" ybr="628.73" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1482.02" ytl="1569.79" xbr="1566.41" ybr="1646.51" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="911.66" ytl="1155.94" xbr="997.59" ybr="1250.31" z_order="0">
+    </box>
+    <box label="caribbean" source="manual" occluded="0" xtl="1236.60" ytl="550.51" xbr="1314.82" ybr="663.20" z_order="0">
+    </box>
+  </image>
+  <image id="78" name="picture8.jpg" width="2560" height="1920">
+  </image>
+  <image id="79" name="picture9.jpg" width="2560" height="1920">
+  </image>
+</annotations>
