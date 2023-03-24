@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>110645</id>
+      <name>session5_augment_off</name>
+      <size>35</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2023-03-24 14:01:07.616866+00:00</created>
+      <updated>2023-03-24 14:42:00.360582+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>34</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>109405</id>
+          <start>0</start>
+          <stop>34</stop>
+          <url>https://app.cvat.ai/api/jobs/109405</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>alyssacaples</username>
+        <email>alyssacaples@ufl.edu</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>oriental</name>
+          <color>#33ddff</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </task>
+    <dumped>2023-03-24 14:42:15.318923+00:00</dumped>
+  </meta>
+  <image id="0" name="picture100.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="796.96" ytl="538.82" xbr="879.44" ybr="603.15" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="976.21" ytl="374.42" xbr="1068.58" ybr="481.64" z_order="0">
+    </box>
+  </image>
+  <image id="1" name="picture101.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="761.41" ytl="998.21" xbr="879.90" ybr="1101.21" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1524.99" ytl="459.16" xbr="1642.33" ybr="577.77" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1606.62" ytl="959.11" xbr="1726.50" ybr="1056.04" z_order="0">
+    </box>
+  </image>
+  <image id="2" name="picture102.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="1125.13" ytl="1492.10" xbr="1243.69" ybr="1596.54" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1614.89" ytl="1607.84" xbr="1747.57" ybr="1723.57" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1288.86" ytl="971.29" xbr="1393.30" ybr="1096.90" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1504.84" ytl="458.43" xbr="1590.13" ybr="568.98" z_order="0">
+    </box>
+  </image>
+  <image id="3" name="picture103.jpg" width="2560" height="1920">
+  </image>
+  <image id="4" name="picture104.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="1222.40" ytl="751.63" xbr="1335.42" ybr="856.64" z_order="0">
+    </box>
+  </image>
+  <image id="5" name="picture105.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="876.74" ytl="566.78" xbr="987.57" ybr="654.03" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1514.59" ytl="1074.93" xbr="1615.98" ybr="1195.19" z_order="0">
+    </box>
+  </image>
+  <image id="6" name="picture106.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="1532.82" ytl="1541.62" xbr="1652.76" ybr="1625.06" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="985.85" ytl="857.81" xbr="1074.30" ybr="927.08" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="849.18" ytl="1633.79" xbr="947.17" ybr="1713.05" z_order="0">
+    </box>
+  </image>
+  <image id="7" name="picture107.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="1375.06" ytl="680.02" xbr="1473.53" ybr="800.42" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1033.69" ytl="1293.34" xbr="1127.87" ybr="1388.29" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="909.55" ytl="532.90" xbr="1001.78" ybr="614.52" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1395.04" ytl="359.15" xbr="1481.49" ybr="456.14" z_order="0">
+    </box>
+  </image>
+  <image id="8" name="picture73.jpg" width="2560" height="1920">
+  </image>
+  <image id="9" name="picture74.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="1523.29" ytl="1083.45" xbr="1627.64" ybr="1191.14" z_order="0">
+    </box>
+  </image>
+  <image id="10" name="picture75.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="1176.80" ytl="1457.42" xbr="1260.60" ybr="1541.77" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1444.63" ytl="471.89" xbr="1527.54" ybr="569.41" z_order="0">
+    </box>
+  </image>
+  <image id="11" name="picture76.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="1120.05" ytl="739.92" xbr="1208.28" ybr="833.29" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="990.77" ytl="855.86" xbr="1073.88" ybr="949.22" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1651.50" ytl="1087.73" xbr="1765.38" ybr="1193.40" z_order="0">
+    </box>
+  </image>
+  <image id="12" name="picture77.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="1175.46" ytl="1473.32" xbr="1265.44" ybr="1558.89" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1062.21" ytl="1580.91" xbr="1141.49" ybr="1683.47" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="753.62" ytl="742.69" xbr="833.86" ybr="818.62" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1625.00" ytl="541.78" xbr="1696.33" ybr="635.52" z_order="0">
+    </box>
+  </image>
+  <image id="13" name="picture78.jpg" width="2560" height="1920">
+  </image>
+  <image id="14" name="picture79.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="1669.08" ytl="1216.02" xbr="1752.73" ybr="1316.58" z_order="0">
+    </box>
+  </image>
+  <image id="15" name="picture80.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="955.22" ytl="1558.02" xbr="1058.34" ybr="1664.98" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="874.73" ytl="392.15" xbr="989.40" ybr="522.24" z_order="0">
+    </box>
+  </image>
+  <image id="16" name="picture81.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="1519.79" ytl="628.89" xbr="1617.13" ybr="728.03" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1485.55" ytl="344.09" xbr="1558.55" ybr="449.54" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="842.40" ytl="1083.99" xbr="951.59" ybr="1170.27" z_order="0">
+    </box>
+  </image>
+  <image id="17" name="picture82.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="999.32" ytl="1174.21" xbr="1111.57" ybr="1284.83" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1116.46" ytl="1388.95" xbr="1220.57" ybr="1480.05" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1604.50" ytl="1449.14" xbr="1711.87" ybr="1551.63" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1240.09" ytl="707.31" xbr="1355.60" ybr="778.89" z_order="0">
+    </box>
+  </image>
+  <image id="18" name="picture83.jpg" width="2560" height="1920">
+  </image>
+  <image id="19" name="picture84.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="1274.53" ytl="416.73" xbr="1362.13" ybr="507.79" z_order="0">
+    </box>
+  </image>
+  <image id="20" name="picture85.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="775.97" ytl="1092.22" xbr="891.67" ybr="1187.92" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1658.59" ytl="379.29" xbr="1753.01" ybr="475.14" z_order="0">
+    </box>
+  </image>
+  <image id="21" name="picture86.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="1490.16" ytl="1652.96" xbr="1564.30" ybr="1748.72" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1589.63" ytl="1549.16" xbr="1673.66" ybr="1630.72" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="852.75" ytl="441.98" xbr="948.84" ybr="521.56" z_order="0">
+    </box>
+  </image>
+  <image id="22" name="picture87.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="750.44" ytl="891.83" xbr="878.41" ybr="990.50" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="790.53" ytl="1197.10" xbr="913.87" ybr="1291.15" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1277.74" ytl="1030.59" xbr="1376.41" ybr="1127.72" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1344.03" ytl="501.75" xbr="1442.71" ybr="606.60" z_order="0">
+    </box>
+  </image>
+  <image id="23" name="picture88.jpg" width="2560" height="1920">
+  </image>
+  <image id="24" name="picture89.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="1633.53" ytl="1355.75" xbr="1721.38" ybr="1457.67" z_order="0">
+    </box>
+  </image>
+  <image id="25" name="picture90.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="782.28" ytl="1554.44" xbr="884.54" ybr="1661.69" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1638.10" ytl="441.70" xbr="1751.05" ybr="566.50" z_order="0">
+    </box>
+  </image>
+  <image id="26" name="picture91.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="928.33" ytl="1005.98" xbr="1072.55" ybr="1118.15" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1395.95" ytl="1131.26" xbr="1513.95" ybr="1271.11" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1024.48" ytl="516.51" xbr="1142.48" ybr="644.70" z_order="0">
+    </box>
+  </image>
+  <image id="27" name="picture92.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="718.93" ytl="1017.55" xbr="829.53" ybr="1138.90" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1027.69" ytl="1338.60" xbr="1173.62" ybr="1449.20" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1609.87" ytl="1535.22" xbr="1715.87" ybr="1619.71" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1437.24" ytl="431.63" xbr="1544.98" ybr="537.20" z_order="0">
+    </box>
+  </image>
+  <image id="28" name="picture93.jpg" width="2560" height="1920">
+  </image>
+  <image id="29" name="picture94.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="1133.51" ytl="471.22" xbr="1208.29" ybr="553.16" z_order="0">
+    </box>
+  </image>
+  <image id="30" name="picture95.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="1394.80" ytl="639.62" xbr="1485.34" ybr="712.20" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1568.39" ytl="355.30" xbr="1651.44" ybr="461.55" z_order="0">
+    </box>
+  </image>
+  <image id="31" name="picture96.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="914.33" ytl="902.26" xbr="1031.05" ybr="1000.41" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="916.85" ytl="326.61" xbr="1028.40" ybr="442.00" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1054.25" ytl="1664.41" xbr="1143.87" ybr="1752.58" z_order="0">
+    </box>
+  </image>
+  <image id="32" name="picture97.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="770.42" ytl="1061.21" xbr="900.74" ybr="1191.52" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1590.01" ytl="794.12" xbr="1671.86" ybr="906.12" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1593.24" ytl="604.57" xbr="1690.17" ybr="738.11" z_order="0">
+    </box>
+    <box label="oriental" source="manual" occluded="0" xtl="1201.22" ytl="601.33" xbr="1336.92" ybr="707.96" z_order="0">
+    </box>
+  </image>
+  <image id="33" name="picture98.jpg" width="2560" height="1920">
+  </image>
+  <image id="34" name="picture99.jpg" width="2560" height="1920">
+    <box label="oriental" source="manual" occluded="0" xtl="1492.21" ytl="366.44" xbr="1581.49" ybr="475.95" z_order="0">
+    </box>
+  </image>
+</annotations>
