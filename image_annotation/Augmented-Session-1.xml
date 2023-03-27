@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>110221</id>
+      <size>69</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2023-03-26 22:52:35.464564+00:00</created>
+      <updated>2023-03-26 23:38:56.795456+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>68</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>110221</id>
+          <start>0</start>
+          <stop>68</stop>
+          <url>https://app.cvat.ai/api/jobs/110221</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>griffin</username>
+        <email>griffinglay@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>oriental fruit fly</name>
+          <color>#ff6037</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>caribbean fruit fly</name>
+          <color>#ddff33</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2023-03-26 23:39:04.074055+00:00</dumped>
+  </meta>
+  <image id="0" name="picture1.jpg" width="2560" height="1920">
+  </image>
+  <image id="1" name="picture10.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1408.91" ytl="985.60" xbr="1518.01" ybr="1082.47" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="856.47" ytl="1548.09" xbr="936.27" ybr="1634.34" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="834.42" ytl="759.69" xbr="900.37" ybr="850.67" z_order="0">
+    </box>
+  </image>
+  <image id="2" name="picture11.jpg" width="2560" height="1920">
+  </image>
+  <image id="3" name="picture12.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1439.06" ytl="984.36" xbr="1535.09" ybr="1095.93" z_order="0">
+    </box>
+  </image>
+  <image id="4" name="picture13.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1097.95" ytl="1377.84" xbr="1203.82" ybr="1478.61" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1301.48" ytl="1649.37" xbr="1387.68" ybr="1735.11" z_order="0">
+    </box>
+  </image>
+  <image id="5" name="picture14.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1428.23" ytl="653.71" xbr="1537.51" ybr="747.53" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1530.68" ytl="1601.86" xbr="1619.04" ybr="1672.76" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1039.85" ytl="1283.24" xbr="1140.66" ybr="1385.85" z_order="0">
+    </box>
+  </image>
+  <image id="6" name="picture15.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1094.77" ytl="1764.10" xbr="1177.10" ybr="1835.77" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="831.68" ytl="1384.45" xbr="928.87" ybr="1480.45" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1143.21" ytl="608.95" xbr="1250.03" ybr="705.15" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1440.77" ytl="1175.94" xbr="1523.26" ybr="1262.94" z_order="0">
+    </box>
+  </image>
+  <image id="7" name="picture16.jpg" width="2560" height="1920">
+  </image>
+  <image id="8" name="picture18.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="927.65" ytl="1336.30" xbr="1031.70" ybr="1431.89" z_order="0">
+    </box>
+  </image>
+  <image id="9" name="picture19.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="611.11" ytl="1099.74" xbr="693.83" ybr="1203.94" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="885.18" ytl="1418.72" xbr="980.97" ybr="1496.20" z_order="0">
+    </box>
+  </image>
+  <image id="10" name="picture2.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1266.07" ytl="1608.41" xbr="1355.31" ybr="1699.50" z_order="0">
+    </box>
+  </image>
+  <image id="11" name="picture20.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1274.96" ytl="1309.76" xbr="1381.40" ybr="1401.89" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1143.85" ytl="501.27" xbr="1240.36" ybr="600.81" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="781.92" ytl="1533.81" xbr="866.60" ybr="1597.38" z_order="0">
+    </box>
+  </image>
+  <image id="12" name="picture21.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="964.20" ytl="1361.16" xbr="1063.13" ybr="1459.85" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="562.65" ytl="775.21" xbr="644.29" ybr="859.22" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1266.14" ytl="702.71" xbr="1373.37" ybr="797.04" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1326.49" ytl="1099.69" xbr="1405.18" ybr="1187.63" z_order="0">
+    </box>
+  </image>
+  <image id="13" name="picture22.jpg" width="2560" height="1920">
+  </image>
+  <image id="14" name="picture23.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="967.68" ytl="550.07" xbr="1054.45" ybr="637.69" z_order="0">
+    </box>
+  </image>
+  <image id="15" name="picture24.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1343.47" ytl="842.34" xbr="1451.00" ybr="943.26" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="736.03" ytl="1306.81" xbr="831.11" ybr="1404.07" z_order="0">
+    </box>
+  </image>
+  <image id="16" name="picture25.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1352.01" ytl="1330.21" xbr="1445.61" ybr="1428.42" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="983.18" ytl="535.34" xbr="1084.45" ybr="635.87" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="847.58" ytl="1062.27" xbr="911.90" ybr="1157.10" z_order="0">
+    </box>
+  </image>
+  <image id="17" name="picture252.jpg" width="2560" height="1920">
+  </image>
+  <image id="18" name="picture253.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1304.44" ytl="1433.71" xbr="1398.03" ybr="1506.34" z_order="0">
+    </box>
+  </image>
+  <image id="19" name="picture254.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="980.31" ytl="1089.85" xbr="1069.16" ybr="1190.50" z_order="0">
+    </box>
+  </image>
+  <image id="20" name="picture255.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1498.85" ytl="1073.33" xbr="1604.75" ybr="1160.11" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="810.80" ytl="1420.00" xbr="888.15" ybr="1551.33" z_order="0">
+    </box>
+  </image>
+  <image id="21" name="picture256.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="926.93" ytl="1445.48" xbr="1001.16" ybr="1549.25" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1427.80" ytl="1298.71" xbr="1549.49" ybr="1394.93" z_order="0">
+    </box>
+  </image>
+  <image id="22" name="picture26.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="809.27" ytl="725.28" xbr="905.05" ybr="814.89" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1033.46" ytl="1650.33" xbr="1121.85" ybr="1729.88" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1391.90" ytl="505.29" xbr="1478.99" ybr="610.64" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1059.55" ytl="1009.25" xbr="1127.50" ybr="1100.78" z_order="0">
+    </box>
+  </image>
+  <image id="23" name="picture27.jpg" width="2560" height="1920">
+  </image>
+  <image id="24" name="picture28.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1317.36" ytl="812.44" xbr="1425.10" ybr="898.82" z_order="0">
+    </box>
+  </image>
+  <image id="25" name="picture29.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1316.98" ytl="872.43" xbr="1404.75" ybr="954.51" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1247.82" ytl="1334.96" xbr="1352.18" ybr="1429.98" z_order="0">
+    </box>
+  </image>
+  <image id="26" name="picture3.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="905.88" ytl="1319.21" xbr="971.06" ybr="1412.36" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1350.31" ytl="895.11" xbr="1467.61" ybr="983.87" z_order="0">
+    </box>
+  </image>
+  <image id="27" name="picture30.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="925.20" ytl="875.11" xbr="1021.62" ybr="980.15" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1457.47" ytl="654.43" xbr="1558.47" ybr="751.73" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="818.76" ytl="1253.18" xbr="906.47" ybr="1328.21" z_order="0">
+    </box>
+  </image>
+  <image id="28" name="picture31.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1135.21" ytl="1093.37" xbr="1208.71" ybr="1163.53" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1316.20" ytl="1504.07" xbr="1408.55" ybr="1605.04" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1459.97" ytl="772.86" xbr="1547.38" ybr="855.55" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="848.08" ytl="534.84" xbr="935.39" ybr="618.11" z_order="0">
+    </box>
+  </image>
+  <image id="29" name="picture32.jpg" width="2560" height="1920">
+  </image>
+  <image id="30" name="picture33.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="813.45" ytl="1045.22" xbr="915.99" ybr="1133.58" z_order="0">
+    </box>
+  </image>
+  <image id="31" name="picture34.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="830.86" ytl="1583.23" xbr="935.49" ybr="1661.68" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1116.09" ytl="719.67" xbr="1195.92" ybr="832.82" z_order="0">
+    </box>
+  </image>
+  <image id="32" name="picture35.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="704.99" ytl="1020.70" xbr="807.65" ybr="1101.94" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1054.90" ytl="417.37" xbr="1137.62" ybr="522.44" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1299.02" ytl="698.33" xbr="1390.47" ybr="815.16" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1076.61" ytl="1259.28" xbr="1173.23" ybr="1397.06" z_order="0">
+    </box>
+  </image>
+  <image id="33" name="picture36.jpg" width="2560" height="1920">
+  </image>
+  <image id="34" name="picture37.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1170.71" ytl="866.30" xbr="1271.48" ybr="945.71" z_order="0">
+    </box>
+  </image>
+  <image id="35" name="picture38.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="823.52" ytl="728.89" xbr="896.70" ybr="843.76" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1393.42" ytl="1349.94" xbr="1497.91" ybr="1447.46" z_order="0">
+    </box>
+  </image>
+  <image id="36" name="picture39.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="777.38" ytl="1419.95" xbr="867.94" ybr="1504.47" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1188.42" ytl="1092.09" xbr="1284.22" ybr="1205.25" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1226.53" ytl="519.25" xbr="1330.59" ybr="615.23" z_order="0">
+    </box>
+  </image>
+  <image id="37" name="picture4.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="868.09" ytl="974.47" xbr="973.68" ybr="1061.64" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1429.54" ytl="1182.66" xbr="1535.44" ybr="1287.25" z_order="0">
+    </box>
+  </image>
+  <image id="38" name="picture40.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="863.13" ytl="766.58" xbr="933.66" ybr="873.97" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1107.73" ytl="1348.97" xbr="1206.21" ybr="1429.72" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1232.89" ytl="477.76" xbr="1334.79" ybr="578.20" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1402.73" ytl="1100.20" xbr="1499.27" ybr="1200.43" z_order="0">
+    </box>
+  </image>
+  <image id="39" name="picture41.jpg" width="2560" height="1920">
+  </image>
+  <image id="40" name="picture42.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1284.12" ytl="1169.40" xbr="1393.27" ybr="1271.54" z_order="0">
+    </box>
+  </image>
+  <image id="41" name="picture43.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="712.35" ytl="1332.16" xbr="797.49" ybr="1427.68" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="956.37" ytl="747.11" xbr="1060.16" ybr="832.79" z_order="0">
+    </box>
+  </image>
+  <image id="42" name="picture44.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1320.22" ytl="562.63" xbr="1413.10" ybr="658.60" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="792.97" ytl="1497.34" xbr="898.33" ybr="1598.97" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1357.45" ytl="1157.28" xbr="1456.96" ybr="1252.60" z_order="0">
+    </box>
+  </image>
+  <image id="43" name="picture45.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1250.49" ytl="1400.32" xbr="1333.21" ybr="1483.60" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="697.43" ytl="1616.69" xbr="783.50" ybr="1716.69" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1228.06" ytl="860.24" xbr="1318.64" ybr="948.79" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="729.60" ytl="739.56" xbr="832.38" ybr="838.02" z_order="0">
+    </box>
+  </image>
+  <image id="44" name="picture46.jpg" width="2560" height="1920">
+  </image>
+  <image id="45" name="picture47.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1149.13" ytl="1302.64" xbr="1255.48" ybr="1424.31" z_order="0">
+    </box>
+  </image>
+  <image id="46" name="picture48.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1397.32" ytl="1630.66" xbr="1498.87" ybr="1719.14" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1140.93" ytl="997.89" xbr="1231.33" ybr="1087.71" z_order="0">
+    </box>
+  </image>
+  <image id="47" name="picture49.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="763.52" ytl="1137.55" xbr="836.25" ybr="1211.01" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="813.16" ytl="1587.30" xbr="904.44" ybr="1656.27" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="892.95" ytl="512.29" xbr="989.31" ybr="597.91" z_order="0">
+    </box>
+  </image>
+  <image id="48" name="picture5.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1028.85" ytl="585.00" xbr="1140.01" ybr="674.10" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1425.13" ytl="978.69" xbr="1530.81" ybr="1076.82" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="890.88" ytl="1147.19" xbr="968.05" ybr="1241.79" z_order="0">
+    </box>
+  </image>
+  <image id="49" name="picture50.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1486.90" ytl="1074.43" xbr="1596.49" ybr="1161.53" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1241.55" ytl="841.60" xbr="1326.91" ybr="937.55" z_order="0">
+    </box>
+  </image>
+  <image id="50" name="picture51.jpg" width="2560" height="1920">
+  </image>
+  <image id="51" name="picture52.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1283.85" ytl="839.00" xbr="1393.11" ybr="920.02" z_order="0">
+    </box>
+  </image>
+  <image id="52" name="picture53.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1312.39" ytl="582.12" xbr="1417.99" ybr="655.18" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="699.55" ytl="1284.93" xbr="769.74" ybr="1370.27" z_order="0">
+    </box>
+  </image>
+  <image id="53" name="picture54.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="919.29" ytl="1071.89" xbr="990.45" ybr="1143.74" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1263.52" ytl="1044.31" xbr="1376.25" ybr="1157.82" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1254.06" ytl="1566.42" xbr="1349.75" ybr="1662.55" z_order="0">
+    </box>
+  </image>
+  <image id="54" name="picture55.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="759.60" ytl="655.89" xbr="845.27" ybr="750.87" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1372.62" ytl="757.84" xbr="1456.00" ybr="868.81" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="915.11" ytl="1062.94" xbr="1015.71" ybr="1166.43" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="700.96" ytl="1500.49" xbr="780.33" ybr="1572.57" z_order="0">
+    </box>
+  </image>
+  <image id="55" name="picture56.jpg" width="2560" height="1920">
+  </image>
+  <image id="56" name="picture57.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1130.86" ytl="766.79" xbr="1247.39" ybr="892.62" z_order="0">
+    </box>
+  </image>
+  <image id="57" name="picture58.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="847.95" ytl="1326.25" xbr="929.04" ybr="1413.42" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="907.79" ytl="682.07" xbr="1034.36" ybr="790.68" z_order="0">
+    </box>
+  </image>
+  <image id="58" name="picture59.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1210.54" ytl="735.49" xbr="1311.85" ybr="845.74" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="864.99" ytl="1665.08" xbr="936.02" ybr="1745.43" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1416.33" ytl="1325.30" xbr="1520.84" ybr="1410.88" z_order="0">
+    </box>
+  </image>
+  <image id="59" name="picture6.jpg" width="2560" height="1920">
+  </image>
+  <image id="60" name="picture60.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1407.53" ytl="1599.87" xbr="1500.79" ybr="1726.80" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="901.77" ytl="1034.34" xbr="1006.33" ybr="1143.17" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1319.53" ytl="437.58" xbr="1417.61" ybr="502.39" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1239.14" ytl="1517.40" xbr="1315.62" ybr="1586.73" z_order="0">
+    </box>
+  </image>
+  <image id="61" name="picture61.jpg" width="2560" height="1920">
+  </image>
+  <image id="62" name="picture62.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1214.87" ytl="1387.00" xbr="1304.81" ybr="1469.63" z_order="0">
+    </box>
+  </image>
+  <image id="63" name="picture63.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="913.00" ytl="1584.59" xbr="997.75" ybr="1665.66" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1367.08" ytl="1615.70" xbr="1477.45" ybr="1731.10" z_order="0">
+    </box>
+  </image>
+  <image id="64" name="picture64.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="883.01" ytl="781.79" xbr="964.79" ybr="858.46" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1120.47" ytl="1194.61" xbr="1216.89" ybr="1292.58" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1456.65" ytl="564.55" xbr="1544.96" ybr="638.78" z_order="0">
+    </box>
+  </image>
+  <image id="65" name="picture65.jpg" width="2560" height="1920">
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1208.77" ytl="458.75" xbr="1300.85" ybr="558.33" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="790.39" ytl="951.17" xbr="877.23" ybr="1023.54" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="791.50" ytl="1367.58" xbr="884.73" ybr="1440.32" z_order="0">
+    </box>
+    <box label="oriental fruit fly" source="manual" occluded="0" xtl="1447.91" ytl="1145.78" xbr="1546.34" ybr="1245.05" z_order="0">
+    </box>
+  </image>
+  <image id="66" name="picture7.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1409.36" ytl="1569.84" xbr="1507.99" ybr="1662.31" z_order="0">
+    </box>
+  </image>
+  <image id="67" name="picture8.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1301.51" ytl="627.24" xbr="1405.09" ybr="732.58" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="738.29" ytl="1288.06" xbr="841.70" ybr="1387.88" z_order="0">
+    </box>
+  </image>
+  <image id="68" name="picture9.jpg" width="2560" height="1920">
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1093.39" ytl="615.76" xbr="1197.07" ybr="715.85" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="1446.26" ytl="1280.33" xbr="1554.41" ybr="1389.81" z_order="0">
+    </box>
+    <box label="caribbean fruit fly" source="manual" occluded="0" xtl="841.75" ytl="1279.69" xbr="914.96" ybr="1371.88" z_order="0">
+    </box>
+  </image>
+</annotations>
