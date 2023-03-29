@@ -1,9 +1,20 @@
 import os
 import shutil
+import xml.etree.ElementTree as ET
+import argparse
 
-path_to_folder = "C:\\Users\\seba1\\Downloads\\Augmented_Training_Set\\Augmented-5-OFF\\"
+parser = argparse.ArgumentParser(description='Process some integers.')
+parser.add_argument('-f', '--folder_path', type=str,
+                    help='path to folder of annotated images with corresponding .xml file')
+parser.add_argument('-v', '--num_validation', type=str,
+                    help='the number from images for validation set')
+parser.add_argument('-p', '--prefix_name', type=str,
+                    help='the new name of the file')
+
+args = parser.parse_args()
+
+path_to_folder = args.folder_path
 folder = os.listdir(path_to_folder)
-
 
 '''
 Normal:
@@ -17,7 +28,6 @@ S4.2-MFF: 451 - [512 - 525]
 S5-CFF: 526 - [555 - 560]
 S5-OFF: 561 - [590 - 595]
 '''
-
 
 '''
 Augmented:
@@ -34,15 +44,12 @@ S5-OFF: [561 - 567] - 595
 
 # Partition into directories
 
-# 1. Create directories
-# train_dir = os.path.join(path_to_img, "train")
-# os.mkdir(train_dir)
-# val_dir = os.path.join(path_to_img, "validate")
-# os.mkdir(val_dir)
+# 1. Establish final image directory
+google_colab_file_path = "/content/drive/MyDrive/Training_Session/"
 
 
 # 2. Partition train and validate
-val = int(len(folder)*.2) - 1
+val = args.num_validation
 train = len(folder) - val
 
 # 3. Rename files and place in corresponding directories
@@ -55,34 +62,35 @@ for f in folder:
     else:
         img_files.append(f)
 
-name_counter = 560
+# Iterate through files
 i = 0
+folder_text = "train"
+prefix = args.prefix_name
+counter = 0
 for xml in xml_files:
-    name_counter = name_counter + 1
-    i = i + 1
+    counter = counter + 1
+    if  counter > train:
+        folder_text = "validate"
+
     for img in img_files:
         if xml[:-4] == img[:-4]:
-
             # Change img name
-            new_img_name = path_to_folder + "a_" + str(name_counter) + ".jpg"
-            os.rename(path_to_folder + img, new_img_name)
-            print(new_img_name)
+            new_img_name = prefix + "_" + str(counter) + ".jpg"
+            new_img_path_name = path_to_folder + new_img_name
+            os.rename(path_to_folder + img, new_img_path_name)
+            print(new_img_path_name)
             print(img)
 
-            # Change xml name
-            new_xml_name = path_to_folder + "a_" + str(name_counter) + ".xml"
-            os.rename(path_to_folder + xml, new_xml_name)
-            print(new_xml_name)
+            # Change xml file name
+            new_xml_path_name = path_to_folder + "_" + str(counter) + ".xml"
+            os.rename(path_to_folder + xml, new_xml_path_name)
+            print(new_xml_path_name)
             print(xml)
 
-
-    # if i <= train:
-    #     shutil.move(new_img_name, train_dir)
-    # else:
-    #     shutil.move(new_img_name, val_dir)
-
-    # if i <= val:
-    #     shutil.move(new_img_name, val_dir)
-    # else:
-    #     shutil.move(new_img_name, train_dir)
-    
+            # Modify xml file
+            tree = ET.parse(new_xml_path_name)
+            root = tree.getroot()
+            folder = root.find("folder").text = folder_text
+            filename = root.find("filename").text = new_img_name
+            path = root.find("path").text = google_collab_file_path + folder_text
+            tree.write(new_xml_path_name)

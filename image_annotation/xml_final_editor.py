@@ -3,8 +3,6 @@ import os
 import sys
 import xml.etree.ElementTree as ET
 
-for child in root:
-    print(child)
 
 
 path = "/content/drive/MyDrive/Training_Session/train"

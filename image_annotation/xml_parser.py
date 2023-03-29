@@ -1,28 +1,20 @@
 import xml.etree.ElementTree as ET
-
-# import numpy as np
-# import cv2
-# import matplotlib.pyplot as plt
 import ast
 import os
 import sys
 
-#all images should be inside the image folder
+# All images should be inside the image folder
 xml_parse = "XML_Input\\Augmented-5-OFF.xml" # this should later be based on image folder name # CHANGE THIS TO YOUR OUTPUT XML 
 
 # Folder names
 image_folder_name = "validate"
-#google_collab_file_path = "/content/drive/MyDrive/Training_Session/validate"
-# "/content/drive/MyDrive/Training_Session/train"
 xml_output_folder = "Augmented-5-OFF_OutputXMLs" 
 label_dictionary = {
     "caribbean": "Caribbean Fruit Fly",
     "medfly": "Mediterranean Fruit Fly",
     "oriental": "Oriental Fruit Fly",
 }
-
 print(xml_output_folder)
-# os.chdir("image_annotation") # inside the github
 saved_path = os.getcwd() + "\\" + image_folder_name + "\\"
 
 old_tree = ET.parse(xml_parse)
@@ -35,26 +27,16 @@ os.chdir("XML_Output") # where all xml files should go
 if not os.path.exists(xml_output_folder):
     os.mkdir(xml_output_folder)
 
-# change all xml files
-
+# Change all xml files
 os.chdir(xml_output_folder)
 cnt = 0
-
-#counter = 560
 
 for child in old_root.iter("image"):
     print(child.attrib["name"])
 
-    # counter = counter + 1
-    # if counter > 567:
-    #     google_collab_file_path = "/content/drive/MyDrive/Training_Session/train"
-    #     image_folder_name = "train"
-    
     xml_encoding = '<?xml version="1.0" encoding="utf-8"?>'
 
     filename_title = str(child.attrib["name"])
-    # print(type(filename))
-    # print(filename)
 
     # make a new file based on image name
     root = ET.Element("annotation")
