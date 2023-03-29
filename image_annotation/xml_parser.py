@@ -9,15 +9,16 @@ import sys
 
 #images must be inside the ippd github repo
 #all images should be inside the image folder
-image_folder_name = "Session1"  # where the images are located. CHANGE THIS TO YOUR IMAGE FOLDER NAME
-xml_parse = "fly_image_set_1.xml" # this should later be based on image folder name # CHANGE THIS TO YOUR OUTPUT XML 
+xml_parse = "XML_Input\\Augmented-5-OFF.xml" # this should later be based on image folder name # CHANGE THIS TO YOUR OUTPUT XML 
 
-google_collab_file_path = "/content/drive/MyDrive/" + image_folder_name + "/train"
-
-xml_output_folder = image_folder_name + "_"+ "OutputXMLs" 
+# Folder names
+image_folder_name = "validate"
+google_collab_file_path = "/content/drive/MyDrive/Training_Session/validate"
+# "/content/drive/MyDrive/Training_Session/train"
+xml_output_folder = "Augmented-5-OFF_OutputXMLs" 
 label_dictionary = {
     "caribbean": "Caribbean Fruit Fly",
-    "med": "Mediterranean Fruit Fly",
+    "medfly": "Mediterranean Fruit Fly",
     "oriental": "Oriental Fruit Fly",
 }
 
@@ -40,8 +41,16 @@ if not os.path.exists(xml_output_folder):
 os.chdir(xml_output_folder)
 cnt = 0
 
+counter = 560
+
 for child in old_root.iter("image"):
     print(child.attrib["name"])
+
+    counter = counter + 1
+    if counter > 567:
+        google_collab_file_path = "/content/drive/MyDrive/Training_Session/train"
+        image_folder_name = "train"
+    
     xml_encoding = '<?xml version="1.0" encoding="utf-8"?>'
 
     filename_title = str(child.attrib["name"])
@@ -102,7 +111,7 @@ for child in old_root.iter("image"):
         
     print(filename_title, "total box count: ", box_cnt)
     tree = ET.ElementTree(root)
-    output_xml_name = filename_title[:-4] + "_output.xml"
+    output_xml_name = filename_title[:-4] + ".xml"
     ET.indent(tree, "    ")
     tree.write(output_xml_name, encoding="utf-8", xml_declaration=False)
 

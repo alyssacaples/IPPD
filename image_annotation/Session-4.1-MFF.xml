@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>107705</id>
+      <size>75</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2023-03-21 21:45:54.561870+00:00</created>
+      <updated>2023-03-26 21:29:18.996666+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>74</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>107705</id>
+          <start>0</start>
+          <stop>74</stop>
+          <url>https://app.cvat.ai/api/jobs/107705</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>griffin</username>
+        <email>griffinglay@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>medfly</name>
+          <color>#b83df5</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2023-03-26 21:38:29.467004+00:00</dumped>
+  </meta>
+  <image id="0" name="picture143.jpg" width="2560" height="1920">
+  </image>
+  <image id="1" name="picture144.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1149.48" ytl="926.56" xbr="1207.86" ybr="1002.58" z_order="0">
+    </box>
+  </image>
+  <image id="2" name="picture145.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="864.33" ytl="1166.10" xbr="934.16" ybr="1233.77" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1098.29" ytl="1401.50" xbr="1171.72" ybr="1449.73" z_order="0">
+    </box>
+  </image>
+  <image id="3" name="picture146.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="767.26" ytl="817.56" xbr="833.20" ybr="865.32" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1092.06" ytl="324.64" xbr="1152.41" ybr="401.77" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1324.88" ytl="955.45" xbr="1400.45" ybr="1024.29" z_order="0">
+    </box>
+  </image>
+  <image id="4" name="picture147.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="838.53" ytl="1374.69" xbr="894.90" ybr="1437.71" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1416.25" ytl="1179.22" xbr="1511.19" ybr="1243.87" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1418.31" ytl="530.91" xbr="1499.55" ybr="596.25" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1091.85" ytl="927.97" xbr="1156.84" ybr="994.29" z_order="0">
+    </box>
+  </image>
+  <image id="5" name="picture148.jpg" width="2560" height="1920">
+  </image>
+  <image id="6" name="picture149.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="892.38" ytl="891.01" xbr="963.03" ybr="955.62" z_order="0">
+    </box>
+  </image>
+  <image id="7" name="picture150.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1551.01" ytl="639.95" xbr="1608.11" ybr="699.14" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="945.07" ytl="1415.97" xbr="1010.14" ybr="1489.93" z_order="0">
+    </box>
+  </image>
+  <image id="8" name="picture151.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="893.06" ytl="905.12" xbr="969.58" ybr="967.36" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1506.88" ytl="630.81" xbr="1590.95" ybr="704.81" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="948.15" ytl="1422.87" xbr="1013.62" ybr="1493.10" z_order="0">
+    </box>
+  </image>
+  <image id="9" name="picture152.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="910.24" ytl="1158.65" xbr="982.82" ybr="1211.44" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1090.57" ytl="345.87" xbr="1143.16" ybr="420.72" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1324.95" ytl="315.95" xbr="1404.29" ybr="377.65" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1525.92" ytl="779.99" xbr="1598.91" ybr="847.72" z_order="0">
+    </box>
+  </image>
+  <image id="10" name="picture153.jpg" width="2560" height="1920">
+  </image>
+  <image id="11" name="picture154.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1147.23" ytl="1259.60" xbr="1239.20" ybr="1323.48" z_order="0">
+    </box>
+  </image>
+  <image id="12" name="picture155.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="717.37" ytl="1171.57" xbr="779.60" ybr="1245.60" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1339.12" ytl="618.53" xbr="1424.27" ybr="689.27" z_order="0">
+    </box>
+  </image>
+  <image id="13" name="picture156.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="992.62" ytl="1095.35" xbr="1072.54" ybr="1166.75" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="857.82" ytl="1082.03" xbr="928.68" ybr="1159.29" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="947.86" ytl="1209.37" xbr="1027.79" ybr="1272.78" z_order="0">
+    </box>
+  </image>
+  <image id="14" name="picture157.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1497.02" ytl="868.09" xbr="1560.35" ybr="956.41" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1465.92" ytl="978.63" xbr="1537.58" ybr="1053.07" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="708.84" ytl="1425.76" xbr="764.55" ybr="1477.08" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="769.51" ytl="343.86" xbr="830.45" ybr="403.38" z_order="0">
+    </box>
+  </image>
+  <image id="15" name="picture158.jpg" width="2560" height="1920">
+  </image>
+  <image id="16" name="picture159.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1379.59" ytl="274.19" xbr="1435.71" ybr="346.38" z_order="0">
+    </box>
+  </image>
+  <image id="17" name="picture160.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="751.29" ytl="817.46" xbr="837.75" ybr="882.07" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1154.52" ytl="1502.54" xbr="1209.54" ybr="1572.42" z_order="0">
+    </box>
+  </image>
+  <image id="18" name="picture161.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="756.69" ytl="1439.78" xbr="820.96" ybr="1500.66" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1226.67" ytl="1126.15" xbr="1284.32" ybr="1196.80" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1585.51" ytl="1496.74" xbr="1659.37" ybr="1547.44" z_order="0">
+    </box>
+  </image>
+  <image id="19" name="picture162.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1365.35" ytl="689.11" xbr="1457.13" ybr="748.72" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1052.75" ytl="958.01" xbr="1129.00" ybr="1023.59" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1527.53" ytl="1442.11" xbr="1601.81" ybr="1497.63" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="810.83" ytl="610.03" xbr="887.01" ybr="691.32" z_order="0">
+    </box>
+  </image>
+  <image id="20" name="picture163.jpg" width="2560" height="1920">
+  </image>
+  <image id="21" name="picture164.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1498.47" ytl="1446.14" xbr="1586.86" ybr="1497.24" z_order="0">
+    </box>
+  </image>
+  <image id="22" name="picture165.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="902.03" ytl="1364.40" xbr="972.63" ybr="1448.07" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1026.84" ytl="799.69" xbr="1112.24" ybr="874.10" z_order="0">
+    </box>
+  </image>
+  <image id="23" name="picture166.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1529.04" ytl="870.66" xbr="1609.99" ybr="948.63" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1324.90" ytl="943.87" xbr="1399.30" ybr="1010.53" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1276.09" ytl="764.13" xbr="1358.23" ybr="826.02" z_order="0">
+    </box>
+  </image>
+  <image id="24" name="picture167.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="974.78" ytl="804.33" xbr="1041.27" ybr="874.87" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="893.57" ytl="1115.18" xbr="949.71" ybr="1200.63" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1498.57" ytl="1430.37" xbr="1578.03" ybr="1515.93" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="822.72" ytl="622.79" xbr="890.36" ybr="689.28" z_order="0">
+    </box>
+  </image>
+  <image id="25" name="picture168.jpg" width="2560" height="1920">
+  </image>
+  <image id="26" name="picture169.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1238.96" ytl="465.00" xbr="1313.51" ybr="545.56" z_order="0">
+    </box>
+  </image>
+  <image id="27" name="picture170.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1655.09" ytl="581.31" xbr="1731.99" ybr="648.95" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="936.05" ytl="728.65" xbr="1019.51" ybr="798.56" z_order="0">
+    </box>
+  </image>
+  <image id="28" name="picture171.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1022.86" ytl="1453.71" xbr="1081.63" ybr="1507.89" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="757.89" ytl="1082.43" xbr="822.28" ybr="1154.14" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="749.04" ytl="825.66" xbr="845.63" ybr="884.50" z_order="0">
+    </box>
+  </image>
+  <image id="29" name="picture172.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1226.13" ytl="588.67" xbr="1324.88" ybr="648.13" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1591.81" ytl="1478.60" xbr="1653.51" ybr="1538.03" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1570.85" ytl="548.57" xbr="1639.45" ybr="622.20" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1064.13" ytl="285.61" xbr="1132.00" ybr="334.24" z_order="0">
+    </box>
+  </image>
+  <image id="30" name="picture173.jpg" width="2560" height="1920">
+  </image>
+  <image id="31" name="picture174.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="841.48" ytl="1169.08" xbr="914.43" ybr="1219.86" z_order="0">
+    </box>
+  </image>
+  <image id="32" name="picture175.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="830.34" ytl="1047.03" xbr="892.10" ybr="1134.16" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1485.69" ytl="1210.06" xbr="1554.02" ybr="1258.27" z_order="0">
+    </box>
+  </image>
+  <image id="33" name="picture176.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="820.86" ytl="1362.03" xbr="881.80" ybr="1425.69" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="894.31" ytl="645.33" xbr="987.64" ybr="732.53" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1284.97" ytl="590.59" xbr="1348.06" ybr="654.71" z_order="0">
+    </box>
+  </image>
+  <image id="34" name="picture177.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1123.17" ytl="541.58" xbr="1207.11" ybr="602.22" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1458.59" ytl="1442.72" xbr="1513.45" ybr="1511.62" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1305.08" ytl="982.27" xbr="1374.88" ybr="1032.74" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1035.20" ytl="375.75" xbr="1103.95" ybr="433.84" z_order="0">
+    </box>
+  </image>
+  <image id="35" name="picture178.jpg" width="2560" height="1920">
+  </image>
+  <image id="36" name="picture179.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1545.89" ytl="1296.42" xbr="1600.56" ybr="1366.11" z_order="0">
+    </box>
+  </image>
+  <image id="37" name="picture180.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="888.18" ytl="428.56" xbr="952.28" ybr="489.60" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1017.30" ytl="1445.76" xbr="1081.91" ybr="1510.40" z_order="0">
+    </box>
+  </image>
+  <image id="38" name="picture181.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1337.30" ytl="1153.80" xbr="1421.41" ybr="1217.83" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1109.23" ytl="1226.15" xbr="1171.80" ybr="1292.18" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1468.95" ytl="1445.99" xbr="1527.29" ybr="1508.14" z_order="0">
+    </box>
+  </image>
+  <image id="39" name="picture182.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="944.26" ytl="481.50" xbr="1020.79" ybr="541.77" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="847.41" ytl="660.97" xbr="915.14" ybr="728.69" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="972.03" ytl="726.66" xbr="1037.04" ybr="799.13" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1156.24" ytl="686.03" xbr="1209.74" ybr="744.95" z_order="0">
+    </box>
+  </image>
+  <image id="40" name="picture183.jpg" width="2560" height="1920">
+  </image>
+  <image id="41" name="picture184.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1293.06" ytl="542.21" xbr="1375.60" ybr="593.58" z_order="0">
+    </box>
+  </image>
+  <image id="42" name="picture185.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1001.03" ytl="852.92" xbr="1073.19" ybr="919.36" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1350.18" ytl="1143.46" xbr="1440.39" ybr="1219.58" z_order="0">
+    </box>
+  </image>
+  <image id="43" name="picture186.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1624.89" ytl="950.59" xbr="1691.34" ybr="1026.79" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1175.47" ytl="950.83" xbr="1236.12" ybr="1024.92" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1604.51" ytl="1132.96" xbr="1665.14" ybr="1209.64" z_order="0">
+    </box>
+  </image>
+  <image id="44" name="picture187.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1338.64" ytl="1447.73" xbr="1414.38" ybr="1518.33" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="728.17" ytl="1064.86" xbr="803.90" ybr="1139.16" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1390.73" ytl="1216.70" xbr="1452.84" ybr="1287.84" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="969.30" ytl="1357.47" xbr="1028.43" ybr="1436.37" z_order="0">
+    </box>
+  </image>
+  <image id="45" name="picture188.jpg" width="2560" height="1920">
+  </image>
+  <image id="46" name="picture189.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1361.61" ytl="567.95" xbr="1429.72" ybr="631.11" z_order="0">
+    </box>
+  </image>
+  <image id="47" name="picture190.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1191.31" ytl="1424.45" xbr="1266.28" ybr="1474.84" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1424.39" ytl="875.86" xbr="1502.20" ybr="952.05" z_order="0">
+    </box>
+  </image>
+  <image id="48" name="picture191.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="759.66" ytl="883.40" xbr="836.87" ybr="944.35" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1638.45" ytl="596.19" xbr="1694.18" ybr="665.43" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1067.63" ytl="551.29" xbr="1132.52" ybr="625.06" z_order="0">
+    </box>
+  </image>
+  <image id="49" name="picture192.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1674.43" ytl="410.39" xbr="1717.92" ybr="470.44" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1608.07" ytl="1095.51" xbr="1677.79" ybr="1167.57" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1399.07" ytl="326.76" xbr="1478.87" ybr="382.24" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1515.17" ytl="517.22" xbr="1567.05" ybr="584.53" z_order="0">
+    </box>
+  </image>
+  <image id="50" name="picture193.jpg" width="2560" height="1920">
+  </image>
+  <image id="51" name="picture194.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1669.60" ytl="445.13" xbr="1714.87" ybr="513.97" z_order="0">
+    </box>
+  </image>
+  <image id="52" name="picture195.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="729.34" ytl="903.81" xbr="814.58" ybr="966.69" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1611.53" ytl="1359.74" xbr="1665.51" ybr="1438.80" z_order="0">
+    </box>
+  </image>
+  <image id="53" name="picture196.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="863.63" ytl="766.69" xbr="926.08" ybr="843.42" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1305.67" ytl="1485.26" xbr="1373.39" ybr="1555.59" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1174.53" ytl="787.74" xbr="1253.87" ybr="865.40" z_order="0">
+    </box>
+  </image>
+  <image id="54" name="picture197.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1142.03" ytl="502.81" xbr="1220.54" ybr="567.85" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1381.69" ytl="1126.82" xbr="1448.88" ybr="1209.93" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1005.71" ytl="1211.48" xbr="1076.82" ybr="1268.15" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="760.83" ytl="496.52" xbr="823.76" ybr="564.64" z_order="0">
+    </box>
+  </image>
+  <image id="55" name="picture198.jpg" width="2560" height="1920">
+  </image>
+  <image id="56" name="picture199.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1493.43" ytl="567.43" xbr="1581.70" ybr="649.09" z_order="0">
+    </box>
+  </image>
+  <image id="57" name="picture200.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1178.76" ytl="617.98" xbr="1237.78" ybr="701.78" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1113.84" ytl="860.54" xbr="1225.45" ybr="937.26" z_order="0">
+    </box>
+  </image>
+  <image id="58" name="picture201.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1605.22" ytl="914.80" xbr="1674.89" ybr="988.58" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1617.05" ytl="614.38" xbr="1682.09" ybr="686.39" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1578.49" ytl="1378.98" xbr="1643.76" ybr="1438.30" z_order="0">
+    </box>
+  </image>
+  <image id="59" name="picture202.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="828.74" ytl="283.02" xbr="889.29" ybr="338.08" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1183.40" ytl="1413.30" xbr="1244.37" ybr="1472.82" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1086.51" ytl="872.64" xbr="1165.40" ybr="947.90" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1529.68" ytl="583.24" xbr="1615.04" ybr="653.94" z_order="0">
+    </box>
+  </image>
+  <image id="60" name="picture203.jpg" width="2560" height="1920">
+  </image>
+  <image id="61" name="picture204.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="948.37" ytl="781.26" xbr="1018.42" ybr="851.29" z_order="0">
+    </box>
+  </image>
+  <image id="62" name="picture205.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1615.47" ytl="829.09" xbr="1691.90" ybr="906.25" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1341.41" ytl="1375.58" xbr="1409.13" ybr="1439.92" z_order="0">
+    </box>
+  </image>
+  <image id="63" name="picture206.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1145.60" ytl="657.13" xbr="1215.91" ybr="717.36" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="977.00" ytl="1400.35" xbr="1061.14" ybr="1473.56" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1348.56" ytl="357.72" xbr="1417.20" ybr="418.94" z_order="0">
+    </box>
+  </image>
+  <image id="64" name="picture207.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1659.74" ytl="769.89" xbr="1724.24" ybr="849.80" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1109.79" ytl="603.42" xbr="1187.56" ybr="667.35" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1322.61" ytl="1467.87" xbr="1394.93" ybr="1538.50" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1365.94" ytl="795.37" xbr="1412.49" ybr="875.60" z_order="0">
+    </box>
+  </image>
+  <image id="65" name="picture208.jpg" width="2560" height="1920">
+  </image>
+  <image id="66" name="picture209.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1386.47" ytl="522.51" xbr="1430.93" ybr="594.88" z_order="0">
+    </box>
+  </image>
+  <image id="67" name="picture210.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1269.70" ytl="437.38" xbr="1340.64" ybr="506.30" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1487.63" ytl="376.16" xbr="1548.10" ybr="445.16" z_order="0">
+    </box>
+  </image>
+  <image id="68" name="picture211.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="983.63" ytl="1003.99" xbr="1067.52" ybr="1067.89" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="835.75" ytl="649.98" xbr="913.47" ybr="707.75" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1077.33" ytl="1462.85" xbr="1140.92" ybr="1517.10" z_order="0">
+    </box>
+  </image>
+  <image id="69" name="picture212.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1644.61" ytl="1312.94" xbr="1702.60" ybr="1366.28" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1198.52" ytl="227.28" xbr="1274.62" ybr="280.98" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1326.56" ytl="705.27" xbr="1410.25" ybr="791.86" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1687.14" ytl="768.28" xbr="1760.61" ybr="845.72" z_order="0">
+    </box>
+  </image>
+  <image id="70" name="picture213.jpg" width="2560" height="1920">
+  </image>
+  <image id="71" name="picture214.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="939.41" ytl="1124.30" xbr="1022.46" ybr="1184.39" z_order="0">
+    </box>
+  </image>
+  <image id="72" name="picture215.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1628.55" ytl="867.66" xbr="1698.16" ybr="949.87" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="852.94" ytl="557.55" xbr="918.62" ybr="639.23" z_order="0">
+    </box>
+  </image>
+  <image id="73" name="picture216.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1300.71" ytl="1306.99" xbr="1379.63" ybr="1374.54" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="921.13" ytl="1124.77" xbr="1010.83" ybr="1188.53" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1606.61" ytl="802.90" xbr="1668.78" ybr="882.07" z_order="0">
+    </box>
+  </image>
+  <image id="74" name="picture217.jpg" width="2560" height="1920">
+    <box label="medfly" source="manual" occluded="0" xtl="1304.98" ytl="846.22" xbr="1385.85" ybr="922.81" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="998.73" ytl="532.89" xbr="1065.17" ybr="602.82" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1059.64" ytl="975.13" xbr="1146.23" ybr="1052.77" z_order="0">
+    </box>
+    <box label="medfly" source="manual" occluded="0" xtl="1682.70" ytl="1065.42" xbr="1744.01" ybr="1138.26" z_order="0">
+    </box>
+  </image>
+</annotations>
