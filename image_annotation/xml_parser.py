@@ -7,13 +7,12 @@ import ast
 import os
 import sys
 
-#images must be inside the ippd github repo
 #all images should be inside the image folder
 xml_parse = "XML_Input\\Augmented-5-OFF.xml" # this should later be based on image folder name # CHANGE THIS TO YOUR OUTPUT XML 
 
 # Folder names
 image_folder_name = "validate"
-google_collab_file_path = "/content/drive/MyDrive/Training_Session/validate"
+#google_collab_file_path = "/content/drive/MyDrive/Training_Session/validate"
 # "/content/drive/MyDrive/Training_Session/train"
 xml_output_folder = "Augmented-5-OFF_OutputXMLs" 
 label_dictionary = {
@@ -41,15 +40,15 @@ if not os.path.exists(xml_output_folder):
 os.chdir(xml_output_folder)
 cnt = 0
 
-counter = 560
+#counter = 560
 
 for child in old_root.iter("image"):
     print(child.attrib["name"])
 
-    counter = counter + 1
-    if counter > 567:
-        google_collab_file_path = "/content/drive/MyDrive/Training_Session/train"
-        image_folder_name = "train"
+    # counter = counter + 1
+    # if counter > 567:
+    #     google_collab_file_path = "/content/drive/MyDrive/Training_Session/train"
+    #     image_folder_name = "train"
     
     xml_encoding = '<?xml version="1.0" encoding="utf-8"?>'
 
@@ -60,11 +59,11 @@ for child in old_root.iter("image"):
     # make a new file based on image name
     root = ET.Element("annotation")
     folder = ET.SubElement(root, "folder")
-    folder.text = image_folder_name #google_collab_file_path #
+    folder.text = image_folder_name 
     filename = ET.SubElement(root, "filename")
     filename.text = filename_title
     path = ET.SubElement(root, "path")
-    path.text = google_collab_file_path#saved_path + filename_title
+    path.text = saved_path + filename_title #google_collab_file_path #saved_path + filename_title
 
     source = ET.SubElement(root, "source")
     source.text = "Unknown"
@@ -86,7 +85,7 @@ for child in old_root.iter("image"):
         name = ET.SubElement(object, "name")
         name.text = label_dictionary.get(box.get("label"))
 
-        print(google_collab_file_path)
+        #print(google_collab_file_path)
 
         # unnecessary values
         pose = ET.SubElement(object, "pose")
@@ -116,6 +115,6 @@ for child in old_root.iter("image"):
     tree.write(output_xml_name, encoding="utf-8", xml_declaration=False)
 
     cnt = cnt + 1
-    # if cnt > 1:
-    #     break
+    if cnt > 1:
+        break
 print("total picture count: ", cnt)
