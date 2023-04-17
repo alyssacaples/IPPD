@@ -4,14 +4,11 @@ const char* password = "ixg2pot2qd691";   //your network password
 //const char* ssid     = "";   //your network SSID
 //const char* password = "";   //your network password
 
-String myScript = "/macros/s/AKfycbyqkBmG-2DG1GjpVwpL0cepxmOdrdejhOuRFSScoJwIZj0LQvc8DxguyAodCoIkd3Bs4Q/exec";    //Create your Google Apps Script and replace the "myScript" path.
+String myScript = "/macros/s/AKfycbwXRn3M6I8ny-Ly5_8QgetLw0kLj7_UDi9ugyGNphWMg6A4HvI3oyqTPP2IQgbWMugTTQ/exec";    //Create your Google Apps Script and replace the "myScript" path.
 String myLineNotifyToken = "myToken=**********";    //Line Notify Token. You can set the value of xxxxxxxxxx empty if you don't want to send picture to Linenotify.
-String myFoldername = "&myFoldername=ESP32-CAM";
-String myFilename = "&myFilename=ESP32-CAM.jpg";
-String myImage = "&myFile=";
-
-uint8_t timer_done = 0;
-hw_timer_t* timeout_timer = nullptr;
+String myFoldername = "&myFoldername=ESP32-CAM"; //name of destination folder for images
+String myFilename = "&myFilename=ESP32-CAM.jpg"; //all images will be given this name
+String myImage = "&myFile="; //this line can be safely ignored
 
 #include <WiFi.h>
 #include <WiFiClientSecure.h>
@@ -46,35 +43,30 @@ hw_timer_t* timeout_timer = nullptr;
 
 #define FLASH_GPIO_NUM 4
 
-#define TIMEOUT_SECONDS 4
-#define LED_DELAY_MS 1000
-//#define SLEEP_TIME_US = 1 * 60 * 60 * 1000 * 1000
-#define SLEEP_TIME_US 20 * 1000 * 1000
+#define LED_DELAY_MS 1000 //how long LED stays on after taking picture
 
-void IRAM_ATTR onTimer()
-{
-  timer_done = 1;
-}
+//how long to sleep. Use unsigned long long (ULL) for long durations
+#define SLEEP_TIME_US 8ULL * 60 * 60 * 1000 * 1000
+
 
 void setup()
 {
   WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);
   
+  //begin serial with baud rate 115200
   Serial.begin(115200);
   delay(10);
 
   //set GPIO2 as input
   pinMode(2, INPUT);
+  //quickly turn LED on and off
   pinMode(FLASH_GPIO_NUM, OUTPUT);
-/*ledcAttachPin(4, 3);
-  ledcSetup(3, 5000, 8);
-  ledcWrite(3,10);*/
   digitalWrite(FLASH_GPIO_NUM, HIGH);
   delay(200);
-  //ledcWrite(3,0);
   digitalWrite(FLASH_GPIO_NUM, LOW);
   delay(200);    
-  //ledcDetachPin(3);
+
+  //attempt wifi connection
 
   WiFi.mode(WIFI_STA);
 
@@ -83,6 +75,7 @@ void setup()
   Serial.println(ssid);
   WiFi.begin(ssid, password);  
   
+  //wait 10 seconds for wifi connection
   long int StartTime=millis();
   while (WiFi.status() != WL_CONNECTED) 
   {
@@ -99,25 +92,21 @@ void setup()
   if (WiFi.status() != WL_CONNECTED) {
     Serial.println("Reset");
     
-    //formerly blink here
+    //restart if connection not successful after 10 seconds
         
     delay(1000);
     ESP.restart();
   }
-  else {
-    //ledcAttachPin(4, 3);
-    //ledcSetup(3, 5000, 8);
-    for (int i=0;i<5;i++) {
-      //ledcWrite(3,10);
-      digitalWrite(FLASH_GPIO_NUM, HIGH);
-      delay(200);
-      //ledcWrite(3,0);
-      digitalWrite(FLASH_GPIO_NUM, LOW);
-      delay(200);    
-    }
+
+  //blink LED 5 times to indicate successful wifi connection
+  for (int i=0;i<5;i++) {
     digitalWrite(FLASH_GPIO_NUM, HIGH);
-    //ledcDetachPin(3);      
+    delay(200);
+    digitalWrite(FLASH_GPIO_NUM, LOW);
+    delay(200);    
   }
+  //leave LED on
+  digitalWrite(FLASH_GPIO_NUM, HIGH);
 
   camera_config_t config;
   config.ledc_channel = LEDC_CHANNEL_0;
@@ -140,7 +129,7 @@ void setup()
   config.pin_reset = RESET_GPIO_NUM;
   config.xclk_freq_hz = 20000000;
   config.pixel_format = PIXFORMAT_JPEG;
-  //init with high specs to pre-allocate larger buffers
+  //init with high specs 
   if(psramFound()){
     config.frame_size = FRAMESIZE_QSXGA;
     config.jpeg_quality = 10;  //0-63 lower number means higher quality
@@ -161,55 +150,23 @@ void setup()
     ESP.restart();
   }
 
-  //drop down frame size for higher initial frame rate
   sensor_t * s = esp_camera_sensor_get();
-  //s->set_framesize(s, FRAMESIZE_VGA);  // UXGA|SXGA|XGA|SVGA|VGA|CIF|QVGA|HQVGA|QQVGA
+  //set to really high quality
   s->set_framesize(s, FRAMESIZE_QSXGA);
 
+  //take picture
   SendCapturedImage();
+
+  //sleep
   Serial.println("Going to sleep now");
   esp_sleep_enable_timer_wakeup(SLEEP_TIME_US);
   Serial.flush();
   esp_deep_sleep_start();
-
-  /*Serial.println("Timer started");
-  timeout_timer = timerBegin(0, 80, true);
-  timerAttachInterrupt(timeout_timer, &onTimer, true);
-  timerAlarmWrite(timeout_timer, 1000000 * TIMEOUT_SECONDS, true);
-  timerAlarmEnable(timeout_timer);*/
 }
 
 void loop()
 {
-  /*uint8_t button_pressed = 0;
-  while (!button_pressed && !timer_done)
-  {
-    button_pressed = digitalRead(2);
-    delay(10);
-  }
-  //do the following if timer has run out
-  if (timer_done)
-  {
-    Serial.println("Timer has expired. Taking picture automatically.");
-    for (uint8_t i = 0; i < 3; i++)
-    {
-      //ledcWrite(3,10);
-      digitalWrite(FLASH_GPIO_NUM, HIGH);
-      delay(200);
-      //ledcWrite(3,0);
-      digitalWrite(FLASH_GPIO_NUM, LOW);
-      delay(200);    
-    }
-    SendCapturedImage();
-    Serial.println("Going to sleep now");
-    esp_sleep_enable_timer_wakeup(SLEEP_TIME_US);
-    Serial.flush();
-    esp_deep_sleep_start();
-  }
-  SendCapturedImage();
-  timerRestart(timeout_timer);
-  timer_done = 0;
-  //delay(12000);*/
+  //do nothing; everything is done in setup
   delay(100);
 }
 
@@ -218,11 +175,12 @@ String SendCapturedImage() {
   String getAll="", getBody = "";
   
   camera_fb_t * fb = NULL;
-  //digitalWrite(FLASH_GPIO_NUM, HIGH);
-  //delay(LED_DELAY_MS);
+  //the following line is when the picture is actually taken
   fb = esp_camera_fb_get();  
   delay(LED_DELAY_MS);
+  //turn off LED
   digitalWrite(FLASH_GPIO_NUM, LOW);
+  //if picture not taken successfully
   if(!fb) {
     Serial.println("Camera capture failed");
     delay(1000);
@@ -230,6 +188,7 @@ String SendCapturedImage() {
     return "Camera capture failed";
   }  
   
+  //connect to Google Drive
   Serial.println("Connect to " + String(myDomain));
   WiFiClientSecure client_tcp;
   client_tcp.setInsecure();   //run version 1.0.5 or above
@@ -237,10 +196,8 @@ String SendCapturedImage() {
   if (client_tcp.connect(myDomain, 443)) {
     Serial.println("Connection successful");
     
-    //crop_image(fb, 500, 500, 400, 400);
     char *input = (char *)fb->buf;
     char output[base64_enc_len(3)];
-    //String imageFile = "data:image/jpeg;base64,";
     String init_image_data = "data:image/jpeg;base64,";
     int image_file_length = init_image_data.length();
     //first determine how long the base64 encoded image is
@@ -256,7 +213,7 @@ String SendCapturedImage() {
     String Data = myLineNotifyToken+myFoldername+myFilename+myImage;
 
     Serial.println(image_file_length);
-    //Serial.println(imageFile.length());    
+    //print TCP header
     client_tcp.println("POST " + myScript + " HTTP/1.1");
     client_tcp.println("Host: " + String(myDomain));
     client_tcp.println("Content-Length: " + String(Data.length()+image_file_length));
@@ -264,11 +221,13 @@ String SendCapturedImage() {
     client_tcp.println("Connection: keep-alive");
     client_tcp.println();
     
+    //start printing body
     client_tcp.print(Data);
     client_tcp.print(init_image_data);
 
     input = (char *)fb->buf;
     String packet_string = "";
+    //print 1200 base64 bytes at a time until the end of the image is reached
     for (int i=0;i<image_file_length;i++) {
       base64_encode(output, (input++), 3);
       if (i%3==0)
@@ -277,22 +236,20 @@ String SendCapturedImage() {
       }
       if (i%1200==0)
       {
-        //Serial.println(packet_string.length());
         client_tcp.print(packet_string);
         packet_string = "";
       }
       
     }
     client_tcp.print(packet_string);
-    /*for (int i = 0; i < imageFile.length(); i = i+1000) {
-      client_tcp.print(imageFile.substring(i, i+1000));
-    }*/
+    //deallocate the memory for the image
     esp_camera_fb_return(fb);
     
-    int waitTime = 10000;   // timeout 10 seconds
+    int waitTime = 10000;   // timeout 10 seconds for sending to google drive
     long startTime = millis();
     boolean state = false;
     
+    //wait for transmission to complete
     while ((startTime + waitTime) > millis())
     {
       Serial.print(".");
@@ -312,7 +269,9 @@ String SendCapturedImage() {
        }
        if (getBody.length()>0) break;
     }
+    //close tcp connection
     client_tcp.stop();
+    //print what Google Drive says to us (either success message or error message)
     Serial.println(getBody);
   }
   else {
@@ -323,7 +282,7 @@ String SendCapturedImage() {
   return getBody;
 }
 
-
+//helper function for base64 encoding
 String urlencode(String str)
 {
     String encodedString="";
